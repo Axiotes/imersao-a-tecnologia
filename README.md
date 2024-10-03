@@ -1,4 +1,6 @@
-# ImersaoATecnologia
+# Imersão a Tecnologia
+
+O projeto **Imersão a Tecnologia** consiste em um software desenvolvido para apresentar algumas das principais áreas da tecnologia, como inteligência artificial, gestão, design, games e desenvolvimento web.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
 
