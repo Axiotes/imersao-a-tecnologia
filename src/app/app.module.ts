@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
+import { AreasComponent } from './components/areas/areas.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonComponent
+    ButtonComponent,
+    AreasComponent
   ],
   providers: [
     provideClientHydration()
