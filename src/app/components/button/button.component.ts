@@ -12,6 +12,7 @@ import { NgClass, NgStyle } from '@angular/common';
 export class ButtonComponent {
   @Input({ required: true }) public label!: string;
   @Input({ required: true }) public class!: ButtonClass;
-  @Input() public width!: string;
-  @Input() public height!: string;
+  @Input() public fontSize: string = '16px';
+  @Input() public width: string = '200px';
+  @Input() public height: string = '60px';
 }

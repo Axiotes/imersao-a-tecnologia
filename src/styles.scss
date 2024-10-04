@@ -4,9 +4,3 @@
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
 }
-
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
