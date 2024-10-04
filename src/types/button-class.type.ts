@@ -1,0 +1,1 @@
+export type ButtonClass = 'black' | 'green';
