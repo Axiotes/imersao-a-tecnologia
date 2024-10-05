@@ -10,6 +10,12 @@ export class BreakpointsService {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  public get screenSize(): BreakpointsScreen {
+    this.observeBreakpoints();
+
+    return this.currentScreenSize;
+  }
+
   private set screenSize(breakpoints: { [key: string]: boolean }) {
     const screenSize = [
       Breakpoints.XSmall,
@@ -24,12 +30,6 @@ export class BreakpointsService {
         this.currentScreenSize = size as BreakpointsScreen;
       }
     });
-  }
-
-  public get screenSize(): BreakpointsScreen {
-    this.observeBreakpoints();
-
-    return this.currentScreenSize;
   }
 
   private observeBreakpoints(): void {
