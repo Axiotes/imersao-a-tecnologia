@@ -1,0 +1,26 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+
+  &__nav {
+    @include flex-center;
+    gap: 30px;
+
+    a {
+        color: $color-black;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+  }
+}
