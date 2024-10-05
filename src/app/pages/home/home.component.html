@@ -1,1 +1,61 @@
-<p>home works!</p>
+<main class="home">
+  <div class="home__start">
+    <app-header></app-header>
+
+    <div class="home__start__content">
+      <h1>
+        <span>Voe alto,</span>
+        <span>e desbrave</span>
+        <span>o mundo da tecnologia!</span>
+      </h1>
+
+      <p>
+        <span
+          >Vamos te guiar nessa jornada incrível pelo mundo da tecnologia,</span
+        >
+        <span
+          >te ajudando a dar os primeiros passos nesse universo magnífico!</span
+        >
+      </p>
+
+      <app-button
+        [class]="'black'"
+        [label]="'Venha conhecer!'"
+        [minWidth]="120"
+        [minHeight]="36"
+        [minFontSize]="10"
+      ></app-button>
+    </div>
+
+    <img src="/assets/rocket.png" />
+  </div>
+  <div class="home__end">
+    <div class="home__end__carousel">
+      <h2>Principais áreas que você pode atuar</h2>
+
+      carrossel de cards
+    </div>
+
+    <div class="home__end__content">
+      <div class="home__end__content-text">
+        <h2>Venha aprender!</h2>
+
+        <p>
+          <span>O universo da tecnologia é vasto e cheio de possibilidades,</span> 
+          <span>e há muitas áreas onde você pode atuar. Estamos aqui para</span> 
+          <span>te guiar a mergulhar nesse mundo!</span>
+        </p>
+
+        <app-button
+          [class]="'green'"
+          [label]="'Áreas da Tecnologia'"
+          [minWidth]="120"
+          [minHeight]="36"
+          [minFontSize]="10"
+        ></app-button>
+      </div>
+
+      <img src="/assets/studing.png" />
+    </div>
+  </div>
+</main>

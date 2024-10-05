@@ -1,0 +1,66 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+
+  img {
+    width: 27px;
+    height: auto;
+
+    @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+      width: 34px;
+    }
+
+    @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
+      width: 41px;
+    }
+
+    @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
+      width: 48px;
+    }
+
+    @media screen and (min-width: $screen-Large) {
+      width: 55px;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+
+    a {
+        color: $color-black;
+        font-size: 12px;
+        font-weight: 300;
+        cursor: pointer;
+
+        @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+          font-size: 15px;
+        }
+
+        @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
+          font-size: 18px;
+        }
+
+        @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
+          font-size: 21px;
+        }
+
+        @media screen and (min-width: $screen-Large) {
+          font-size: 24px;
+        }
+    }
+  }
+}
