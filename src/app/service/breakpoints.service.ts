@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointsScreen } from '../../types/breakpoint-screens.type';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BreakpointsService {
-  private currentScreenSize!: string;
+  private currentScreenSize!: BreakpointsScreen;
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
@@ -20,12 +21,12 @@ export class BreakpointsService {
 
     screenSize.forEach((size) => {
       if (breakpoints[size]) {
-        this.currentScreenSize = size;
+        this.currentScreenSize = size as BreakpointsScreen;
       }
     });
   }
 
-  public get screenSize(): string {
+  public get screenSize(): BreakpointsScreen {
     this.observeBreakpoints();
 
     return this.currentScreenSize;
@@ -42,9 +43,7 @@ export class BreakpointsService {
       ])
       .subscribe((result) => {
         if (result.matches) {
-          console.log(result.breakpoints);
           this.screenSize = result.breakpoints;
-          console.log(this.currentScreenSize);
         }
       });
   }
