@@ -3,7 +3,6 @@ import { ButtonClass } from '../../../types/button-class.type';
 import { NgClass, NgStyle } from '@angular/common';
 import { BreakpointsService } from '../../service/breakpoints.service';
 import { BreakpointsScreen } from '../../../types/breakpoint-screens.type';
-import { Size } from '../../../types/size.type';
 
 @Component({
   selector: 'app-button',
