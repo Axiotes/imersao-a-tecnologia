@@ -1,1 +1,28 @@
-<app-header></app-header>
+<main class="home">
+  <div class="home__start">
+    <app-header></app-header>
+
+    <div class="home__start__content">
+      <h1>
+        <span>Voe alto,</span>
+        <span>e desbrave</span>
+        <span>o mundo da tecnologia!</span>
+      </h1>
+
+      <p>
+        <span>Vamos te guiar nessa jornada incrível pelo mundo da tecnologia,</span>
+        <span>te ajudando a dar os primeiros passos nesse universo magnífico!</span>
+      </p>
+
+      <app-button
+        [class]="'black'"
+        [label]="'Áreas da Tecnologia'"
+        [minWidth]="120"
+        [minHeight]="36"
+        [minFontSize]="10"
+      ></app-button>
+    </div>
+
+    <img src="/assets/rocket.png" />
+  </div>
+</main>

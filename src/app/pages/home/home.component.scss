@@ -1,0 +1,49 @@
+@import "../../../styles/_variables";
+@import "../../../styles/_utilities";
+
+.home {
+  width: 100%;
+  height: 100%;
+
+  &__start {
+    background-color: $color-green-03;
+    @include flex-center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    &__content {
+      width: 100%;
+      height: 100%;
+      @include flex-start;
+      flex-direction: column;
+      gap: 30px;
+      margin-left: 5%;
+
+      h1 {
+        @include flex-start;
+        flex-direction: column;
+        color: $color-black;
+        font-weight: 700;
+        font-size: 50px;
+      }
+
+      p {
+        @include flex-start;
+        flex-direction: column;
+        color: $color-black;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+
+    img {
+        width: 560px;
+        height: auto;
+        position: absolute;
+        right: 10%;
+        top: 185px;
+    }
+  }
+}
