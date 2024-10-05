@@ -75,7 +75,7 @@
 
       @media screen and (min-width: $screen-Large) {
         gap: 30px;
-        
+
         h1 {
           font-size: 58px;
         }
@@ -131,6 +131,161 @@
         width: 573px;
         right: 10%;
         top: 185px;
+      }
+    }
+  }
+
+  &__end {
+    background-color: $color-black;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    @include flex-center;
+    flex-direction: column;
+    gap: 70px;
+
+    &__carousel {
+      width: 100%;
+      @include flex-center;
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 21px;
+        padding: 0 50px;
+
+        @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
+            font-size: 32px;
+        }
+
+        @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
+            font-size: 36px;
+        }
+
+        @media screen and (min-width: $screen-Large) {
+            font-size: 36px;
+        }
+      }
+    }
+
+    &__content {
+      @include flex-center;
+      gap: 70px;
+      flex-direction: column;
+
+      &-text {
+        color: #ffffff;
+        @include flex-center;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+          font-weight: 500;
+          font-size: 20px;
+        }
+
+        p {
+          @include flex-center;
+          flex-direction: column;
+          font-weight: 300;
+          font-size: 10px;
+        }
+
+        @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+          @include flex-start;
+
+          h2 {
+            font-size: 21px;
+          }
+
+          p {
+            @include flex-start;
+            font-size: 10px;
+          }
+        }
+
+        @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
+          @include flex-start;
+
+          h2 {
+            font-size: 28px;
+          }
+
+          p {
+            @include flex-start;
+            font-size: 12px;
+          }
+        }
+
+        @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
+          @include flex-start;
+
+          h2 {
+            font-size: 32px;
+          }
+
+          p {
+            @include flex-start;
+            font-size: 16px;
+          }
+        }
+
+        @media screen and (min-width: $screen-Large) {
+          @include flex-start;
+
+          h2 {
+            font-size: 32px;
+          }
+
+          p {
+            @include flex-start;
+            font-size: 16px;
+          }
+        }
+      }
+
+      img {
+        width: 240px;
+        height: auto;
+      }
+
+      @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+        flex-direction: row;
+        gap: 15px;
+
+        img {
+          width: 234px;
+        }
+      }
+
+      @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
+        flex-direction: row;
+
+        img {
+          width: 312px;
+        }
+      }
+
+      @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
+        flex-direction: row;
+
+        img {
+          width: 415px;
+        }
+      }
+
+      @media screen and (min-width: $screen-Large) {
+        flex-direction: row;
+
+        img {
+          width: 415px;
+        }
       }
     }
   }
