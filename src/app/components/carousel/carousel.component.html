@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="container__carousel">
+    <app-areas
+      *ngFor="let area of areasList"
+      [title]="area.title"
+      [description]="area.description"
+    ></app-areas>
+  </div>
+  <div class="container__nav">
+    <button class="container__nav__buttons" (click)="previousArea()"><</button>
+    <button
+      class="container__nav__items"
+      *ngFor="let area of areasList; let i = index"
+      [ngClass]="{ active: i === activeArea }"
+    ></button>
+    <button class="container__nav__buttons" (click)="nextArea()">></button>
+  </div>
+</div>

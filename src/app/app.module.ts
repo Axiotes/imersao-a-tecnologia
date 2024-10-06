@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
-import { AreasComponent } from './components/areas/areas.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     AppRoutingModule,
     ButtonComponent,
-    AreasComponent,
-    HeaderComponent
+    HeaderComponent,
+    CarouselComponent
   ],
   providers: [
     provideClientHydration()

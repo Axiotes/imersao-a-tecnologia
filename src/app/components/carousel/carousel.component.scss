@@ -1,0 +1,40 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.container {
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__carousel {
+    @include flex-center;
+    gap: 50px;
+    margin-right: 32px;
+  }
+
+  &__nav {
+    @include flex-center;
+    gap: 25px;
+
+    &__buttons {
+      color: $color-green-03;
+      font-size: 30px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+
+    &__items {
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid $color-green-03;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  background-color: $color-green-03;
+}
