@@ -2,14 +2,23 @@
 @import "../../../styles/_variables";
 
 .container {
+  width: 100%;
   @include flex-center;
   flex-direction: column;
   gap: 20px;
 
   &__carousel {
-    @include flex-center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
     gap: 50px;
-    margin-right: 32px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__nav {
@@ -37,4 +46,16 @@
 
 .active {
   background-color: $color-green-03;
+}
+
+.center-area {
+  margin-top: 3.5rem;
+}
+
+.side-areas {
+  opacity: 0.5;
+}
+
+.last-areas {
+  opacity: 0.2;
 }

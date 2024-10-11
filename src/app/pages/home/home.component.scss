@@ -148,13 +148,8 @@
       width: 100%;
       @include flex-center;
       flex-direction: column;
-      overflow: scroll;
+      overflow: hidden;
       gap: 60px;
-      scroll-behavior: smooth;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
 
       h2 {
         text-align: center;
