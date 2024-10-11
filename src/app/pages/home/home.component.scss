@@ -148,6 +148,8 @@
       width: 100%;
       @include flex-center;
       flex-direction: column;
+      overflow: hidden;
+      gap: 60px;
 
       h2 {
         text-align: center;
@@ -157,19 +159,19 @@
         padding: 0 50px;
 
         @media screen and (min-width: $screen-XSmall) and (max-width: $screen-Small) {
-            font-size: 25px;
+          font-size: 25px;
         }
 
         @media screen and (min-width: $screen-Small) and (max-width: $screen-Medium) {
-            font-size: 32px;
+          font-size: 32px;
         }
 
         @media screen and (min-width: $screen-Medium) and (max-width: $screen-Large) {
-            font-size: 36px;
+          font-size: 36px;
         }
 
         @media screen and (min-width: $screen-Large) {
-            font-size: 36px;
+          font-size: 36px;
         }
       }
     }

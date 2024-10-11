@@ -1,0 +1,1 @@
+export type Areas = { title: string; description: string; };

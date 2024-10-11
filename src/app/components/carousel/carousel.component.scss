@@ -1,0 +1,61 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.container {
+  width: 100%;
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__carousel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    
+    &-areas {
+      position: relative;
+      transition: 1s;
+    }
+  }
+
+  &__nav {
+    @include flex-center;
+    gap: 25px;
+
+    &__buttons {
+      color: $color-green-03;
+      font-size: 30px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+
+    &__items {
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid $color-green-03;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  background-color: $color-green-03;
+}
+
+.center-area {
+  margin-top: 3.5rem;
+}
+
+.side-areas {
+  opacity: 0.5;
+}
+
+.last-areas {
+  opacity: 0.2;
+}
