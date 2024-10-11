@@ -14,33 +14,28 @@ import { AreasComponent } from '../areas/areas.component';
 export class CarouselComponent {
   public areasList: Areas[] = AreasListData;
   public activeArea: number = 2;
-  public distance: number = 0;
 
   public nextArea(): void {
     if (this.activeArea < this.areasList.length - 1) {
       this.activeArea++;
-      this.distance += 380;
 
       return;
     }
 
-    this.distance += 380;
     this.activeArea = 0;
   }
 
   public previousArea(): void {
     if (this.activeArea > 0) {
       this.activeArea--;
-      this.distance -= 380;
 
       return;
     }
 
-    this.distance -= 380;
     this.activeArea = this.areasList.length - 1;
   }
 
-  public getDistance(index: number): number {
+  public getDistance(index: number): number {   
     if (index === 0) {
       const distance = 380;
       const positions = index - this.activeArea;
