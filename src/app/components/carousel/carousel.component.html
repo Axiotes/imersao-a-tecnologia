@@ -1,9 +1,13 @@
 <div class="container">
   <div class="container__carousel">
     <app-areas
+      class="container__carousel-areas"
       *ngFor="let area of areasList; let i = index"
       [title]="area.title"
       [description]="area.description"
+      [ngStyle]="{
+        'right': getDistance(i) + 'px'
+      }"
     ></app-areas>
   </div>
   <div class="container__nav">

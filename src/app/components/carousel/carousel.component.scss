@@ -14,10 +14,10 @@
     align-items: center;
     justify-items: center;
     gap: 50px;
-    overflow: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
+    
+    &-areas {
+      position: relative;
+      transition: 1s;
     }
   }
 
