@@ -77,6 +77,10 @@ export class CarouselComponent {
     return positions[strPosition];
   }
 
+  public selectActiveArea(index: number): void {
+    this.activeArea = index;
+  }
+
   public touchStart(event: TouchEvent): void {
     this.touchMoved = false;
     this.startX = event.touches[0].clientX;
