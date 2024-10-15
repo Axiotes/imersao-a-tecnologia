@@ -14,9 +14,13 @@
     align-items: center;
     justify-items: center;
     gap: 50px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-left: 50px;
     
     &-areas {
-      position: relative;
+      position: absolute;
       transition: 1s;
     }
   }

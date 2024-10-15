@@ -36,121 +36,22 @@ export class CarouselComponent {
   }
 
   public getDistance(index: number): number {   
-    if (index === 0) {
-      const distance = 380;
-      const positions = index - this.activeArea;
+    const distance = 380;
+    const position = index - this.activeArea;
+    const strPosition = position.toString();
 
-      if (positions === -3) {
-        return distance * -4;
-      }
+    const positions: { [key: string]: number } = {
+      '-4': distance * -1,
+      '-3': distance * -2,
+      '-2': distance * 2,
+      '-1': distance,
+      '0': 0,
+      '1': distance * -1,
+      '2': distance * -2,
+      '3': distance * 2,
+      '4': distance,
+    };
 
-      if (positions === -4) {
-        return distance * -3;
-      }
-
-      if (positions === 0) {
-        return distance * -2;
-      }
-
-      if (positions === -1) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 1) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === -2) {
-        return distance;
-      }
-
-      if (positions === -3) {
-        return distance * -3;
-      }
-
-      if (positions === 1) {
-        return distance * -2;
-      }
-
-      if (positions === 0) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 2) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === -1) {
-        return distance;
-      }
-
-      if (positions === -2) {
-        return distance * 2;
-      }
-
-      if (positions === 2) {
-        return distance * -2;
-      }
-
-      if (positions === 1) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 3) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === 0) {
-        return distance;
-      }
-
-      if (positions === -1) {
-        return distance * 2;
-      }
-
-      if (positions === 3) {
-        return distance * 3;
-      }
-
-      if (positions === 2) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 4) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === 1) {
-        return distance;
-      }
-
-      if (positions === 0) {
-        return distance * 2;
-      }
-
-      if (positions === 4) {
-        return distance * 3;
-      }
-
-      if (positions === 3) {
-        return distance * 4;
-      }
-
-      return 0;
-    }
-
-    return 0;
+    return positions[strPosition];
   }
 }
