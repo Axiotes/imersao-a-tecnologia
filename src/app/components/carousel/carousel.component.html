@@ -1,13 +1,16 @@
 <div class="container">
-  <div class="container__carousel">
+  <div
+    class="container__carousel"
+    (touchstart)="touchStart($event)"
+    (touchmove)="touchMove($event)"
+  >
     <app-areas
       class="container__carousel-areas"
       *ngFor="let area of areasList; let i = index"
       [title]="area.title"
       [description]="area.description"
-      [ngStyle]="{
-        'right': getDistance(i) + 'px',
-      }"
+      [ngClass]="getClass(i)"
+      [ngStyle]="{ right: getDistance(i) + 'px' }"
     ></app-areas>
   </div>
   <div class="container__nav">
@@ -16,6 +19,7 @@
       class="container__nav__items"
       *ngFor="let area of areasList; let i = index"
       [ngClass]="{ active: i === activeArea }"
+      (click)="selectActiveArea(i)"
     ></button>
     <button class="container__nav__buttons" (click)="nextArea()">></button>
   </div>

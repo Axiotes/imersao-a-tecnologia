@@ -14,9 +14,13 @@
     align-items: center;
     justify-items: center;
     gap: 50px;
+    position: relative;
+    height: 340px;
+    width: 100%;
+    margin-left: 50px;
     
     &-areas {
-      position: relative;
+      position: absolute;
       transition: 1s;
     }
   }
@@ -58,4 +62,5 @@
 
 .last-areas {
   opacity: 0.2;
+  margin-bottom: 3.5rem;
 }

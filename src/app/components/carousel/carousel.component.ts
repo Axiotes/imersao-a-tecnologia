@@ -14,6 +14,9 @@ import { AreasComponent } from '../areas/areas.component';
 export class CarouselComponent {
   public areasList: Areas[] = AreasListData;
   public activeArea: number = 2;
+  private touchMoved: boolean = false;
+  private startX: number = 0;
+  private startY: number = 0;
 
   public nextArea(): void {
     if (this.activeArea < this.areasList.length - 1) {
@@ -35,122 +38,73 @@ export class CarouselComponent {
     this.activeArea = this.areasList.length - 1;
   }
 
-  public getDistance(index: number): number {   
-    if (index === 0) {
-      const distance = 380;
-      const positions = index - this.activeArea;
+  public getDistance(index: number): number {
+    const distance = 380;
+    const position = index - this.activeArea;
+    const strPosition = position.toString();
 
-      if (positions === -3) {
-        return distance * -4;
+    const positions: { [key: string]: number } = {
+      '-4': distance * -1,
+      '-3': distance * -2,
+      '-2': distance * 2,
+      '-1': distance,
+      '0': 0,
+      '1': distance * -1,
+      '2': distance * -2,
+      '3': distance * 2,
+      '4': distance,
+    };
+
+    return positions[strPosition];
+  }
+
+  public getClass(index: number): string {
+    const position = index - this.activeArea;
+    const strPosition = position.toString();
+
+    const positions: { [key: string]: string } = {
+      '-4': 'side-areas',
+      '-3': 'last-areas',
+      '-2': 'last-areas',
+      '-1': 'side-areas',
+      '0': 'center-area',
+      '1': 'side-areas',
+      '2': 'last-areas',
+      '3': 'last-areas',
+      '4': 'side-areas',
+    };
+
+    return positions[strPosition];
+  }
+
+  public selectActiveArea(index: number): void {
+    this.activeArea = index;
+  }
+
+  public touchStart(event: TouchEvent): void {
+    this.touchMoved = false;
+    this.startX = event.touches[0].clientX;
+    this.startY = event.touches[0].clientY;
+  }
+
+  public touchMove(event: TouchEvent): void {
+    if (!this.touchMoved) {
+      this.touchMoved = true;
+
+      const currentX = event.touches[0].clientX;
+      const currentY = event.touches[0].clientY;
+      const deltaX = currentX - this.startX;
+      const deltaY = currentY - this.startY;
+
+      if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0) {
+          // Direita
+          this.previousArea();
+        } else {
+          // Esquerda
+          this.nextArea();
+        }
       }
-
-      if (positions === -4) {
-        return distance * -3;
-      }
-
-      if (positions === 0) {
-        return distance * -2;
-      }
-
-      if (positions === -1) {
-        return distance * -1;
-      }
-
-      return 0;
     }
-
-    if (index === 1) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === -2) {
-        return distance;
-      }
-
-      if (positions === -3) {
-        return distance * -3;
-      }
-
-      if (positions === 1) {
-        return distance * -2;
-      }
-
-      if (positions === 0) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 2) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === -1) {
-        return distance;
-      }
-
-      if (positions === -2) {
-        return distance * 2;
-      }
-
-      if (positions === 2) {
-        return distance * -2;
-      }
-
-      if (positions === 1) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 3) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === 0) {
-        return distance;
-      }
-
-      if (positions === -1) {
-        return distance * 2;
-      }
-
-      if (positions === 3) {
-        return distance * 3;
-      }
-
-      if (positions === 2) {
-        return distance * -1;
-      }
-
-      return 0;
-    }
-
-    if (index === 4) {
-      const distance = 380;
-      const positions = index - this.activeArea;
-
-      if (positions === 1) {
-        return distance;
-      }
-
-      if (positions === 0) {
-        return distance * 2;
-      }
-
-      if (positions === 4) {
-        return distance * 3;
-      }
-
-      if (positions === 3) {
-        return distance * 4;
-      }
-
-      return 0;
-    }
-
-    return 0;
   }
 }
