@@ -54,4 +54,23 @@ export class CarouselComponent {
 
     return positions[strPosition];
   }
+
+  public getClass(index: number): string {
+    const position = index - this.activeArea;
+    const strPosition = position.toString();
+
+    const positions: { [key: string]: string } = {
+      '-4': 'side-areas',
+      '-3': 'last-areas',
+      '-2': 'last-areas',
+      '-1': 'side-areas',
+      '0': 'center-area',
+      '1': 'side-areas',
+      '2': 'last-areas',
+      '3': 'last-areas',
+      '4': 'side-areas',
+    };
+
+    return positions[strPosition];
+  }
 }
