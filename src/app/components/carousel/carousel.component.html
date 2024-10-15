@@ -1,14 +1,16 @@
 <div class="container">
-  <div class="container__carousel">
+  <div
+    class="container__carousel"
+    (touchstart)="touchStart($event)"
+    (touchmove)="touchMove($event)"
+  >
     <app-areas
       class="container__carousel-areas"
       *ngFor="let area of areasList; let i = index"
       [title]="area.title"
       [description]="area.description"
       [ngClass]="getClass(i)"
-      [ngStyle]="{
-        'right': getDistance(i) + 'px',
-      }"
+      [ngStyle]="{ right: getDistance(i) + 'px' }"
     ></app-areas>
   </div>
   <div class="container__nav">
