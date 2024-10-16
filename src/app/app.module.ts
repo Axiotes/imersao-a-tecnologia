@@ -8,19 +8,21 @@ import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TrailComponent } from './pages/trail/trail.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TrailComponent
+    TrailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonComponent,
     HeaderComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavigationComponent
   ],
   providers: [
     provideClientHydration()
