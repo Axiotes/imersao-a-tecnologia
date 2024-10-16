@@ -7,11 +7,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TrailComponent } from './pages/trail/trail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TrailComponent
   ],
   imports: [
     BrowserModule,
