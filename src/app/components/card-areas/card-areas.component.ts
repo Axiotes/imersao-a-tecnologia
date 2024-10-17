@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ArrowRight, LucideAngularModule } from 'lucide-angular';
 import { LucideIconData } from 'lucide-angular/icons/types';
 
@@ -10,5 +10,7 @@ import { LucideIconData } from 'lucide-angular/icons/types';
   styleUrl: './card-areas.component.scss',
 })
 export class CardAreasComponent {
+  @Input() public title!: string;
+  @Input() public description!: string;
   public arrow: LucideIconData = ArrowRight;
 }

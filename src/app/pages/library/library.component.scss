@@ -1,7 +1,39 @@
 @import "../../../styles/_utilities";
+@import "../../../styles/_variables";
 
 .library {
   @include flex-center;
-  width: 100%;
+  flex-direction: column;
+  width: calc(100vw - 80px);
   height: 100%;
+  padding: 35px 0 35px 20px;
+  gap: 30px;
+
+  @media screen and (min-width: $screen-Small) {
+    justify-content: start;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: start;
+
+    @media screen and (min-width: $screen-Small) {
+      width: 820px;
+      text-align: start;
+    }
+  }
+
+  &__areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+
+    @media screen and (min-width: $screen-Small) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
