@@ -1,0 +1,67 @@
+@import "../../../styles/_variables";
+@import "../../../styles/_utilities";
+
+.card {
+  width: 260px;
+  height: 180px;
+  background-color: $color-neural-900;
+  border: 1px solid $color-neural-600;
+  border-radius: 15px;
+  @include flex-center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px black;
+  gap: 10px;
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid $color-green-01;
+
+    .card__header-icon {
+      color: $color-green-01;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-img {
+      background-color: $color-black;
+      @include flex-center;
+      height: 32px;
+      width: 32px;
+      border-radius: 100%;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+
+    &-icon {
+      color: $color-neural-600;
+      transition: 0.5s;;
+    }
+  }
+
+  &__infos {
+    @include flex-start;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+      color: $color-green-01;
+    }
+
+    p {
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

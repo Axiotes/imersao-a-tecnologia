@@ -1,0 +1,11 @@
+<main class="library">
+  <h1>Áreas que você pode atuar</h1>
+
+  <div class="library__areas">
+    <app-card-areas
+      *ngFor="let areas of AreasList"
+      [title]="areas.title"
+      [description]="areas.description"
+    ></app-card-areas>
+  </div>
+</main>

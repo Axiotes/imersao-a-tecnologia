@@ -1,0 +1,9 @@
+@import "../../../styles/_variables";
+@import "../../../styles/_utilities";
+
+.trail {
+  background-color: $color-black;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}

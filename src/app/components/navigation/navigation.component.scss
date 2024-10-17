@@ -1,0 +1,26 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    width: 60px;
+    padding: 20px 0;
+    gap: 25px;
+    border-right: 2px solid $color-neural-600;
+
+    &__icons {
+        @include flex-center;
+        flex-direction: column;
+        gap: 10px;
+
+        &-icon {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,22 +10,26 @@ import { HomeComponent } from './pages/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TrailComponent } from './pages/trail/trail.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { LibraryComponent } from './pages/library/library.component';
+import { CardAreasComponent } from './components/card-areas/card-areas.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonComponent,
     HeaderComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavigationComponent,
+    RouterOutlet,
+    RouterLink,
+    CardAreasComponent,
   ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
