@@ -15,9 +15,10 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { LibraryComponent } from './pages/library/library.component';
 import { CardAreasComponent } from './components/card-areas/card-areas.component';
+import { ContentComponent } from './pages/content/content.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent],
+  declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent, ContentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
