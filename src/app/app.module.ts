@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,24 +12,22 @@ import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TrailComponent } from './pages/trail/trail.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { LibraryComponent } from './pages/library/library.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    TrailComponent,
-  ],
+  declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonComponent,
     HeaderComponent,
     CarouselComponent,
-    NavigationComponent
+    NavigationComponent,
+    RouterOutlet,
+    RouterLink,
   ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

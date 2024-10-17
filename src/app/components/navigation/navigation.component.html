@@ -1,7 +1,12 @@
-<nav class="navigation">
+<div class="navigation">
   <img src="/assets/logo-white.png" />
 
-  <div class="navigation__icons">
-    <i-lucide *ngFor="let icon of icons" [img]="icon.icon" class="navigation__icons-icon"></i-lucide>
-  </div>
-</nav>
+  <nav class="navigation__icons">
+    <i-lucide
+      *ngFor="let icon of icons"
+      [img]="icon.icon"
+      [routerLink]="icon.route"
+      class="navigation__icons-icon"
+    ></i-lucide>
+  </nav>
+</div>

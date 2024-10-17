@@ -24,12 +24,14 @@
         [minWidth]="120"
         [minHeight]="36"
         [minFontSize]="10"
+        [routerLink]="['/home']"
+        fragment="areas"
       ></app-button>
     </div>
 
     <img src="/assets/rocket.png" />
   </div>
-  <div class="home__end">
+  <div class="home__end" id="areas">
     <div class="home__end__carousel">
       <h2>Principais áreas que você pode atuar</h2>
 
@@ -54,6 +56,7 @@
           [minWidth]="120"
           [minHeight]="36"
           [minFontSize]="10"
+          routerLink="/trail/library"
         ></app-button>
       </div>
 
