@@ -17,9 +17,16 @@ import { LibraryComponent } from './pages/library/library.component';
 import { CardAreasComponent } from './components/card-areas/card-areas.component';
 import { ContentComponent } from './pages/content/content.component';
 import { CardTechnologiesComponent } from './components/card-technologies/card-technologies.component';
+import { InfosComponent } from './components/infos/infos.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent, ContentComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    TrailComponent,
+    LibraryComponent,
+    ContentComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,7 +37,8 @@ import { CardTechnologiesComponent } from './components/card-technologies/card-t
     RouterOutlet,
     RouterLink,
     CardAreasComponent,
-    CardTechnologiesComponent
+    CardTechnologiesComponent,
+    InfosComponent,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
