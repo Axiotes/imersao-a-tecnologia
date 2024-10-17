@@ -18,6 +18,7 @@ import { CardAreasComponent } from './components/card-areas/card-areas.component
 import { ContentComponent } from './pages/content/content.component';
 import { CardTechnologiesComponent } from './components/card-technologies/card-technologies.component';
 import { InfosComponent } from './components/infos/infos.component';
+import { HeaderContentComponent } from './components/header-content/header-content.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { InfosComponent } from './components/infos/infos.component';
     CardAreasComponent,
     CardTechnologiesComponent,
     InfosComponent,
+    HeaderContentComponent
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
