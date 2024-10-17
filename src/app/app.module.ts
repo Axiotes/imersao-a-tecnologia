@@ -14,6 +14,7 @@ import { TrailComponent } from './pages/trail/trail.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { LibraryComponent } from './pages/library/library.component';
+import { CardAreasComponent } from './components/card-areas/card-areas.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent],
@@ -26,6 +27,7 @@ import { LibraryComponent } from './pages/library/library.component';
     NavigationComponent,
     RouterOutlet,
     RouterLink,
+    CardAreasComponent,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
