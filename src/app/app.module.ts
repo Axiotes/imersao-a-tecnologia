@@ -16,6 +16,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { LibraryComponent } from './pages/library/library.component';
 import { CardAreasComponent } from './components/card-areas/card-areas.component';
 import { ContentComponent } from './pages/content/content.component';
+import { CardTechnologiesComponent } from './components/card-technologies/card-technologies.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, TrailComponent, LibraryComponent, ContentComponent],
@@ -29,6 +30,7 @@ import { ContentComponent } from './pages/content/content.component';
     RouterOutlet,
     RouterLink,
     CardAreasComponent,
+    CardTechnologiesComponent
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
