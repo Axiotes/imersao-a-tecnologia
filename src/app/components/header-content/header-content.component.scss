@@ -16,7 +16,7 @@
 
   @media (max-width: $screen-XSmall) {
     padding: 0 25px;
-    height: 310px;
+    height: 360px;
   }
 
   &__icon {
@@ -53,7 +53,7 @@
     }
 
     @media (max-width: $screen-XSmall) {
-      width: 100%;
+      width: 220px;
       font-size: 10px;
     }
   }
@@ -61,5 +61,10 @@
   &__infos {
     @include flex-start;
     gap: 10px;
+
+    @media (max-width: $screen-XSmall) {
+      width: 220px;
+      flex-wrap: wrap;
+    }
   }
 }
