@@ -1,0 +1,70 @@
+@import "../../../styles/_utilities";
+@import "../../../styles/_variables";
+
+.header {
+  background-color: $color-black;
+  @include flex-start;
+  flex-direction: column;
+  height: 330px;
+  padding: 50px;
+  gap: 20px;
+
+  @media (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+    gap: 15px;
+    padding: 40px;
+  }
+
+  @media (max-width: $screen-XSmall) {
+    padding: 0 25px;
+    height: 360px;
+  }
+
+  &__icon {
+    color: white;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $color-green-01;
+    @include flex-center;
+    gap: 10px;
+
+    &-icon {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-XSmall) {
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    color: white;
+    width: 600px;
+    font-size: 14px;
+
+    @media (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+      width: 300px;
+    }
+
+    @media (max-width: $screen-XSmall) {
+      width: 220px;
+      font-size: 10px;
+    }
+  }
+
+  &__infos {
+    @include flex-start;
+    gap: 10px;
+
+    @media (max-width: $screen-XSmall) {
+      width: 220px;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<header class="header">
+  <i-lucide
+    [img]="arrowRight"
+    class="header__icon"
+    routerLink="/trail"
+  ></i-lucide>
+
+  <span class="header__title">
+    <h1>{{ title }}</h1>
+    <i-lucide [img]="area.icon" class="header__title-icon"></i-lucide>
+  </span>
+
+  <p class="header__text">{{ text }}</p>
+
+  <div class="header__infos">
+    <app-infos *ngFor="let tag of tags" [label]="tag"></app-infos>
+  </div>
+</header>

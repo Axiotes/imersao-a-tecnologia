@@ -1,0 +1,46 @@
+@import "../../../styles/_variables";
+@import "../../../styles/_utilities";
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid $color-neural-600;
+    border-radius: 10px;
+    width: 700px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    @media (max-width: $screen-XSmall) {
+        width: 250px;
+    }
+
+    @media (min-width: $screen-XSmall) and (max-width: $screen-Small) {
+        width: 350px;
+    }
+
+    @media (min-width: $screen-Small) and (max-width: $screen-Medium) {
+        width: 450px;
+    }
+
+    @media (min-width: $screen-Medium) and (max-width: $screen-Large) {
+        width: 600px;
+    }
+
+    &:hover {
+        border: 1px solid $color-green-01;
+    }
+
+    &-icon {
+        color: white;
+    }
+
+    h1 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-green-01;
+    }
+}
