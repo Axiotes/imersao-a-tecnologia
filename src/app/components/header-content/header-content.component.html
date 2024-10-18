@@ -1,20 +1,18 @@
 <header class="header">
-  <i-lucide [img]="arrowRight" class="header__icon" routerLink="/trail"></i-lucide>
+  <i-lucide
+    [img]="arrowRight"
+    class="header__icon"
+    routerLink="/trail"
+  ></i-lucide>
 
   <span class="header__title">
-    <h1>Desenvolvimento Web</h1>
-    <i-lucide [img]="computer" class="header__title-icon"></i-lucide>
+    <h1>{{ area.title }}</h1>
+    <i-lucide [img]="area.icon" class="header__title-icon"></i-lucide>
   </span>
 
-  <p class="header__text">
-    O profissional que trabalha no desenvolvimento web é conhecido como web
-    developer ou programador. Ele é responsável por criar a estrutura de um
-    site, desde o planejamento do layout até a manutenção de tudo o que é
-    processado na plataforma.
-  </p>
+  <p class="header__text">{{ area.text }}</p>
 
   <div class="header__infos">
-    <app-infos [label]="'Front-End'"></app-infos>
-    <app-infos [label]="'Back-End'"></app-infos>
+    <app-infos *ngFor="let info of area.infos" [label]="info.title"></app-infos>
   </div>
 </header>

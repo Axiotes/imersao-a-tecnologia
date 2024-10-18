@@ -14,9 +14,11 @@ const routes: Routes = [
     children: [
       { path: 'library', component: LibraryComponent },
       {
-        path: 'content',
+        path: ':slug',
         component: ContentComponent,
-        children: [{ path: 'all-infos', component: AllInfosComponent }],
+        children: [
+          { path: 'all-infos', component: AllInfosComponent },
+        ],
       },
       { path: '', pathMatch: 'full', redirectTo: 'library' },
     ],

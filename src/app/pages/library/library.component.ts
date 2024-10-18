@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Areas } from '../../../types/area-list.type';
 import { AllAreasData } from '../../../data/all-areas';
+import { AllAreas } from '../../../types/all-areas.type';
 
 @Component({
   selector: 'app-library',
@@ -8,5 +8,5 @@ import { AllAreasData } from '../../../data/all-areas';
   styleUrl: './library.component.scss',
 })
 export class LibraryComponent {
-  public AreasList: Areas[] = AllAreasData;
+  public AreasList: AllAreas[] = AllAreasData;
 }
