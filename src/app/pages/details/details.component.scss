@@ -5,4 +5,35 @@
   width: calc(100vw - 60px);
   min-height: calc(100vh - 330px);
   background-color: $color-neural-900;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 50px;
+
+  &__content {
+    width: 100%;
+    @include flex-start;
+    flex-direction: column;
+    gap: 5px;
+
+    h3 {
+      color: #DCE1DE;
+      font-size: 10px;
+      font-weight: 300;
+    }
+
+    h2 {
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
 }
