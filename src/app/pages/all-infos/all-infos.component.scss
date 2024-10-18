@@ -3,7 +3,7 @@
 
 .all {
   width: calc(100vw - 60px);
-  height: calc(100vh - 330px);
+  min-height: calc(100vh - 330px);
   background-color: $color-neural-900;
   display: flex;
   align-items: start;
@@ -11,6 +11,11 @@
   flex-direction: column;
   padding: 50px;
   gap: 20px;
+
+  @media (max-width: $screen-XSmall) {
+    padding: 20px;
+    min-height: calc(100vh - 310px);
+  }
 
   p {
     max-width: 750px;
