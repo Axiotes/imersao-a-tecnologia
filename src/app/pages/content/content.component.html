@@ -1,9 +1,14 @@
 <main class="content">
-  <app-header-content (sendArea)="receiveArea($event)" [infos]="infos"></app-header-content>
+  <app-header-content
+    (sendArea)="receiveArea($event)"
+    [infos]="infos"
+  ></app-header-content>
 
   <app-all-infos
     *ngIf="typeInfo === 'all'"
     [area]="area"
     (infos)="receiveInfos($event)"
   ></app-all-infos>
+
+  <app-details *ngIf="typeInfo === 'details'"></app-details>
 </main>
