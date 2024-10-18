@@ -1,0 +1,15 @@
+<div class="section" (click)="toggleExpanded()">
+  <div class="section__header">
+    <div class="section__header__title">
+      <i-lucide [img]="book" [size]="16" class="section__header__title-icon"></i-lucide>
+
+      <h1>HTML e CSS</h1>
+    </div>
+
+    <i-lucide
+      [img]="chevronUp"
+      class="section__header__chevron"
+      [ngClass]="{ rotate: isExpanded }"
+    ></i-lucide>
+  </div>
+</div>

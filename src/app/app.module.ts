@@ -22,6 +22,7 @@ import { HeaderContentComponent } from './components/header-content/header-conte
 import { AllInfosComponent } from './pages/all-infos/all-infos.component';
 import { CommonModule } from '@angular/common';
 import { DetailsComponent } from './pages/details/details.component';
+import { StepSectionComponent } from './components/step-section/step-section.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { DetailsComponent } from './pages/details/details.component';
     InfosComponent,
     HeaderContentComponent,
     CommonModule,
+    StepSectionComponent,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

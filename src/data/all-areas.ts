@@ -35,14 +35,12 @@ export const AllAreasData: AllAreas[] = [
         description:
           'O desenvolvimento front-end é a área da programação que se concentra na parte visual de um site ou aplicativo, com foco na experiência do usuário. Desenvolvendo a parte visual(html e css) e aplicando interatividade na página com JavaScript. Garantindo também que o site funcione corretamente com um ótimo desempenho e disponibilidade para navegadores e diferentes dispositivos',
         tags: ['HTML', 'CSS', 'JavaScript'],
-        links: [],
       },
       {
         slug: 'back-end',
         title: 'Back-end',
         description: '',
         tags: [],
-        links: [],
       },
     ],
     infoText:
