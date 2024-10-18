@@ -12,6 +12,10 @@
   gap: 20px;
   padding: 30px 50px;
 
+  @media (max-width: $screen-XSmall) {
+    padding: 15px 25px;
+  }
+
   &__content {
     width: 100%;
     @include flex-start;

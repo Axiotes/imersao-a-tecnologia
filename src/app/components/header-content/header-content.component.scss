@@ -5,7 +5,7 @@
   background-color: $color-black;
   @include flex-start;
   flex-direction: column;
-  height: 330px;
+  min-height: 330px;
   padding: 50px;
   gap: 20px;
 
@@ -15,8 +15,7 @@
   }
 
   @media (max-width: $screen-XSmall) {
-    padding: 0 25px;
-    height: 360px;
+    padding: 25px;
   }
 
   &__icon {
@@ -54,7 +53,7 @@
 
     @media (max-width: $screen-XSmall) {
       width: 220px;
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
