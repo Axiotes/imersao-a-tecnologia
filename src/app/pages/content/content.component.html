@@ -10,5 +10,5 @@
     (infos)="receiveInfos($event)"
   ></app-all-infos>
 
-  <app-details *ngIf="typeInfo === 'details'"></app-details>
+  <app-details *ngIf="typeInfo === 'details'" [slug]="infos.slug"></app-details>
 </main>
