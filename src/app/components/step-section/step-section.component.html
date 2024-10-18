@@ -1,4 +1,8 @@
-<div class="section" (click)="toggleExpanded()">
+<div
+  class="section"
+  (click)="toggleExpanded()"
+  [ngStyle]="{ height: height + 'px' }"
+>
   <div class="section__header">
     <div class="section__header__title">
       <i-lucide
@@ -16,10 +20,11 @@
       [ngClass]="{ rotate: isExpanded }"
     ></i-lucide>
   </div>
+  <div class="section__videos" *ngIf="isExpanded">
+    <app-videos
+      *ngFor="let video of videos"
+      [title]="video.title"
+      [link]="video.link"
+    ></app-videos>
+  </div>
 </div>
-
-<app-videos
-  *ngFor="let video of videos"
-  [title]="video.title"
-  [link]="video.link"
-></app-videos>

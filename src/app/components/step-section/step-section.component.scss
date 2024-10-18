@@ -4,7 +4,9 @@
 .section {
   background-color: transparent;
   border-radius: 10px;
-  @include flex-center;
+  display: flex;
+  align-items: start;
+  justify-items: start;
   flex-direction: column;
   border: 1px solid $color-neural-600;
   width: 250px;
@@ -12,6 +14,7 @@
   cursor: pointer;
   padding: 0 20px;
   transition: 0.5s;
+  overflow: hidden;
 
   &:hover {
     border: 1px solid $color-green-01;
@@ -49,6 +52,12 @@
       color: white;
       transition: 0.5s;
     }
+  }
+
+  &__videos {
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 

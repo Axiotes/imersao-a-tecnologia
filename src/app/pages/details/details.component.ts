@@ -17,7 +17,5 @@ export class DetailsComponent implements OnInit {
     this.allDetails
       .filter((detail) => detail.slug === this.slug)
       .map((detail) => (this.infoDetails = detail.infoDetails));
-
-    console.log(this.infoDetails);
   }
 }
