@@ -20,6 +20,7 @@ import { CardTechnologiesComponent } from './components/card-technologies/card-t
 import { InfosComponent } from './components/infos/infos.component';
 import { HeaderContentComponent } from './components/header-content/header-content.component';
 import { AllInfosComponent } from './pages/all-infos/all-infos.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AllInfosComponent } from './pages/all-infos/all-infos.component';
     CardAreasComponent,
     CardTechnologiesComponent,
     InfosComponent,
-    HeaderContentComponent
+    HeaderContentComponent,
+    CommonModule
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

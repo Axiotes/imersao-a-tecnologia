@@ -9,6 +9,7 @@ export const AllAreasData: AllAreas[] = [
       'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
     text: '',
     infos: [],
+    infoText: '',
     icon: Computer,
   },
   {
@@ -18,6 +19,7 @@ export const AllAreasData: AllAreas[] = [
       'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
     text: '',
     infos: [],
+    infoText: '',
     icon: Computer,
   },
   {
@@ -30,6 +32,8 @@ export const AllAreasData: AllAreas[] = [
       { slug: 'front-end', title: 'Front-end', description: '', links: [] },
       { slug: 'back-end', title: 'Back-end', description: '', links: [] },
     ],
+    infoText:
+      'Para se tornar um desenvolvedor web, é preciso dominar linguagens de programação, bibliotecas e frameworks. A área de desenvolvimento web é dividido em duas partes: Front-end e Back-end.',
     icon: Computer,
   },
   {
@@ -39,6 +43,7 @@ export const AllAreasData: AllAreas[] = [
       'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
     text: '',
     infos: [],
+    infoText: '',
     icon: Computer,
   },
   {
@@ -48,6 +53,7 @@ export const AllAreasData: AllAreas[] = [
       'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
     text: '',
     infos: [],
+    infoText: '',
     icon: Computer,
   },
   {
@@ -57,6 +63,7 @@ export const AllAreasData: AllAreas[] = [
       'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
     text: '',
     infos: [],
+    infoText: '',
     icon: Computer,
   },
 ];

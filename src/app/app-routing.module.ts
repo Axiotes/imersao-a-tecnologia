@@ -16,9 +16,6 @@ const routes: Routes = [
       {
         path: ':slug',
         component: ContentComponent,
-        children: [
-          { path: 'all-infos', component: AllInfosComponent },
-        ],
       },
       { path: '', pathMatch: 'full', redirectTo: 'library' },
     ],

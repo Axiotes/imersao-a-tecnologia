@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {
   ArrowRightFromLine,
   Computer,
@@ -19,6 +19,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './header-content.component.scss',
 })
 export class HeaderContentComponent implements OnInit {
+  @Output() sendArea: EventEmitter<AllAreas> = new EventEmitter<AllAreas>();
   public arrowRight: LucideIconData = ArrowRightFromLine;
   public slug!: string;
   public allArea: AllAreas[] = AllAreasData;
@@ -31,8 +32,11 @@ export class HeaderContentComponent implements OnInit {
       this.slug = params.get('slug')!;
     });
 
-    this.allArea.filter((area) => area.slug === this.slug).map((area) => this.area = area);
-
-    console.log(this.area);
+    this.allArea
+      .filter((area) => area.slug === this.slug)
+      .map((area) => {
+        this.area = area;
+        this.sendArea.emit(area);
+      });
   }
 }

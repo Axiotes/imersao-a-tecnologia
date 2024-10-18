@@ -7,5 +7,6 @@ export type AllAreas = {
   description: string;
   text: string;
   infos: Infos[];
+  infoText: string;
   icon: LucideIconData;
 };

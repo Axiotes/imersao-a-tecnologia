@@ -1,4 +1,5 @@
 <main class="content">
-  <app-header-content></app-header-content>
-  <router-outlet></router-outlet>
+  <app-header-content (sendArea)="receiveArea($event)"></app-header-content>
+
+  <app-all-infos *ngIf="typeInfo === 'all'" [area]="area"></app-all-infos>
 </main>
