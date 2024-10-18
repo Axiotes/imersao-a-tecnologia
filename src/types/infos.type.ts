@@ -3,5 +3,4 @@ export type Infos = {
     title: string;
     description: string;
     tags: string[];
-    links: string[];
 };

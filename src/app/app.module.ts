@@ -21,6 +21,8 @@ import { InfosComponent } from './components/infos/infos.component';
 import { HeaderContentComponent } from './components/header-content/header-content.component';
 import { AllInfosComponent } from './pages/all-infos/all-infos.component';
 import { CommonModule } from '@angular/common';
+import { DetailsComponent } from './pages/details/details.component';
+import { StepSectionComponent } from './components/step-section/step-section.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { CommonModule } from '@angular/common';
     LibraryComponent,
     ContentComponent,
     AllInfosComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { CommonModule } from '@angular/common';
     CardTechnologiesComponent,
     InfosComponent,
     HeaderContentComponent,
-    CommonModule
+    CommonModule,
+    StepSectionComponent,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

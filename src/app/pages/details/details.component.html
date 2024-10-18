@@ -1,0 +1,14 @@
+<main class="details">
+  <div
+    class="details__content"
+    *ngFor="let details of infoDetails; let i = index"
+  >
+    <h3>Etapa {{ i + 1 }}</h3>
+    <h2>{{ details.title }}</h2>
+    <p>{{ details?.text }}</p>
+    <app-step-section
+      [title]="details.subtitle"
+      [videos]="details.videos"
+    ></app-step-section>
+  </div>
+</main>
