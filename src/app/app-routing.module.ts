@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TrailComponent } from './pages/trail/trail.component';
 import { LibraryComponent } from './pages/library/library.component';
 import { ContentComponent } from './pages/content/content.component';
+import { AllInfosComponent } from './pages/all-infos/all-infos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,7 +13,11 @@ const routes: Routes = [
     component: TrailComponent,
     children: [
       { path: 'library', component: LibraryComponent },
-      { path: 'content', component: ContentComponent },
+      {
+        path: 'content',
+        component: ContentComponent,
+        children: [{ path: 'all-infos', component: AllInfosComponent }],
+      },
       { path: '', pathMatch: 'full', redirectTo: 'library' },
     ],
   },
