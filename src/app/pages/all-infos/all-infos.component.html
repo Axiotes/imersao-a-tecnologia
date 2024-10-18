@@ -4,5 +4,6 @@
   <app-card-technologies
     *ngFor="let info of area.infos"
     [label]="info.title"
+    (click)="sendInfo(info)"
   ></app-card-technologies>
 </div>

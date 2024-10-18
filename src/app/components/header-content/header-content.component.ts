@@ -1,4 +1,12 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import {
   ArrowRightFromLine,
   Computer,
@@ -10,6 +18,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AllAreas } from '../../../types/all-areas.type';
 import { AllAreasData } from '../../../data/all-areas';
 import { NgFor } from '@angular/common';
+import { Infos } from '../../../types/infos.type';
 
 @Component({
   selector: 'app-header-content',
@@ -18,12 +27,19 @@ import { NgFor } from '@angular/common';
   templateUrl: './header-content.component.html',
   styleUrl: './header-content.component.scss',
 })
-export class HeaderContentComponent implements OnInit {
+export class HeaderContentComponent implements OnInit, OnChanges {
+  @Input({ required: true }) infos!: Infos;
   @Output() sendArea: EventEmitter<AllAreas> = new EventEmitter<AllAreas>();
-  public arrowRight: LucideIconData = ArrowRightFromLine;
+
   public slug!: string;
   public allArea: AllAreas[] = AllAreasData;
   public area!: AllAreas;
+
+  public title!: string;
+  public text!: string;
+  public tags: string[] = [];
+
+  public arrowRight: LucideIconData = ArrowRightFromLine;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -36,7 +52,19 @@ export class HeaderContentComponent implements OnInit {
       .filter((area) => area.slug === this.slug)
       .map((area) => {
         this.area = area;
+        this.title = area.title;
+        this.text = area.text;
+        area.infos.forEach((info) => this.tags.push(info.title));
         this.sendArea.emit(area);
       });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['infos']) {
+      this.tags = [];
+      this.title = this.infos?.title;
+      this.text = this.infos?.description;
+      this.infos?.tags.forEach((tag) => this.tags.push(tag));
+    }
   }
 }

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AllAreas } from '../../../types/all-areas.type';
+import { Infos } from '../../../types/infos.type';
 
 @Component({
   selector: 'app-all-infos',
@@ -8,4 +9,9 @@ import { AllAreas } from '../../../types/all-areas.type';
 })
 export class AllInfosComponent {
   @Input({ required: true }) area!: AllAreas;
+  @Output() infos: EventEmitter<Infos> = new EventEmitter<Infos>();
+
+  public sendInfo(info: Infos): void {
+    this.infos.emit(info);
+  }
 }
