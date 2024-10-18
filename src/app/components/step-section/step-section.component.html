@@ -1,9 +1,13 @@
 <div class="section" (click)="toggleExpanded()">
   <div class="section__header">
     <div class="section__header__title">
-      <i-lucide [img]="book" [size]="16" class="section__header__title-icon"></i-lucide>
+      <i-lucide
+        [img]="book"
+        [size]="16"
+        class="section__header__title-icon"
+      ></i-lucide>
 
-      <h1>HTML e CSS</h1>
+      <h1>{{ title }}</h1>
     </div>
 
     <i-lucide
@@ -13,3 +17,9 @@
     ></i-lucide>
   </div>
 </div>
+
+<app-videos
+  *ngFor="let video of videos"
+  [title]="video.title"
+  [link]="video.link"
+></app-videos>
