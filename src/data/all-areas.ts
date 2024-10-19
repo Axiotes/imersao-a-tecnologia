@@ -6,7 +6,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'design',
     title: 'Design UI/UX',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'Concentra na criação e aprimoramento das interfaces com as quais os usuários interagem em produtos digitais.',
     text: '',
     infos: [],
     infoText: '',
@@ -14,9 +14,9 @@ export const AllAreasData: AllAreas[] = [
   },
   {
     slug: 'ia',
-    title: 'inteligência artificial (IA)',
+    title: 'Inteligência artificial',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'Permite que computadores e máquinas simulem a capacidade de resolução de problemas e a inteligência humana.',
     text: '',
     infos: [],
     infoText: '',
@@ -26,7 +26,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'dev-web',
     title: 'Desenvolvimento Web',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'Criação, construção e manutenção de websites e aplicações web.',
     text: 'O profissional que trabalha no desenvolvimento web é conhecido como web developer ou programador. Ele é responsável por criar a estrutura de um site, desde o planejamento do layout até a manutenção de tudo o que é processado na plataforma.',
     infos: [
       {
@@ -39,8 +39,8 @@ export const AllAreasData: AllAreas[] = [
       {
         slug: 'back-end',
         title: 'Back-end',
-        description: '',
-        tags: [],
+        description: 'O desenvolvimento back-end é a área responsável por tudo que acontece por trás de um site ou aplicativo. Ele envolve a criação e gerenciamento de servidores, bancos de dados e APIs que garantem o funcionamento correto das funcionalidades do sistema. Fazendo o processamento de solicitações dos usuários, realiza operações lógicas, acessa e armazena dados de forma segura, e retorna as respostas apropriadas para o front-end.',
+        tags: ['Java', 'SQL', 'Spring'],
       },
     ],
     infoText:
@@ -51,7 +51,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'gestao',
     title: 'Gestão',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'Supervisão e coordenação de todas as atividades envolvidas no desenvolvimento, implementação e manutenção de software.',
     text: '',
     infos: [],
     infoText: '',
@@ -61,7 +61,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'games',
     title: 'Games',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'Arte de criar jogos e descreve o planejamento, desenvolvimento e o lançamento de um jogo.',
     text: '',
     infos: [],
     infoText: '',
@@ -71,7 +71,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'data-science',
     title: 'Data Science',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed',
+      'A ciência de dados é uma prática que busca resolver problemas complexos através da análise de dados avançada',
     text: '',
     infos: [],
     infoText: '',

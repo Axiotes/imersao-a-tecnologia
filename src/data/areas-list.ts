@@ -4,26 +4,26 @@ export const AreasListData: Areas[] = [
   {
     title: 'Design UI/UX',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed consequatur dolore quo natus maxime. Non voluptas dolor sit dolor perferendis',
+      'Área do design que se concentra na criação e aprimoramento das interfaces com as quais os usuários interagem em produtos digitais.',
   },
   {
     title: 'inteligência artificial (IA)',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed consequatur dolore quo natus maxime. Non voluptas dolor sit dolor perferendis',
+      'Inteligência artificial é uma tecnologia que permite que computadores e máquinas simulem a capacidade de resolução de problemas e a inteligência humana.',
   },
   {
     title: 'Desenvolvimento Web',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed consequatur dolore quo natus maxime. Non voluptas dolor sit dolor perferendis',
+      'Desenvolvimento web refere-se à criação, construção e manutenção de websites e aplicações web.',
   },
   {
     title: 'Gestão',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed consequatur dolore quo natus maxime. Non voluptas dolor sit dolor perferendis',
+      'Gestão de software refere-se ao processo de supervisão e coordenação de todas as atividades envolvidas no desenvolvimento, implementação e manutenção de software.',
   },
   {
     title: 'Games',
     description:
-      'Lorem ipsum dolor sit amet. Qui assumenda galisum et nihil libero id iusto quia sed consequatur dolore quo natus maxime. Non voluptas dolor sit dolor perferendis',
+      'O desenvolvimento de games é a arte de criar jogos e descreve o planejamento, desenvolvimento e o lançamento de um jogo. ',
   },
 ];
