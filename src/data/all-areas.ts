@@ -51,7 +51,7 @@ export const AllAreasData: AllAreas[] = [
     slug: 'gestao',
     title: 'Gestão',
     description:
-      'Supervisão e coordenação de todas as atividades envolvidas no desenvolvimento, implementação e manutenção de software.',
+      'Supervisão e coordenação das atividades envolvidas no desenvolvimento, implementação e manutenção de software.',
     text: '',
     infos: [],
     infoText: '',
