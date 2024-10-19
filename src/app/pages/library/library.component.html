@@ -6,6 +6,7 @@
       *ngFor="let areas of AreasList"
       [title]="areas.title"
       [description]="areas.description"
+      [icon]="areas.icon"
       routerLink="/trail/{{areas.slug}}"
     ></app-card-areas>
   </div>

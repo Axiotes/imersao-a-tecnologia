@@ -1,4 +1,4 @@
-import { Computer } from 'lucide-angular';
+import { BrainCircuit, ChartBar, Computer, DatabaseZap, Gamepad2, PenTool } from 'lucide-angular';
 import { AllAreas } from '../types/all-areas.type';
 
 export const AllAreasData: AllAreas[] = [
@@ -10,7 +10,7 @@ export const AllAreasData: AllAreas[] = [
     text: '',
     infos: [],
     infoText: '',
-    icon: Computer,
+    icon: PenTool,
   },
   {
     slug: 'ia',
@@ -20,7 +20,7 @@ export const AllAreasData: AllAreas[] = [
     text: '',
     infos: [],
     infoText: '',
-    icon: Computer,
+    icon: BrainCircuit,
   },
   {
     slug: 'dev-web',
@@ -51,11 +51,11 @@ export const AllAreasData: AllAreas[] = [
     slug: 'gestao',
     title: 'Gestão',
     description:
-      'Supervisão e coordenação das atividades envolvidas no desenvolvimento, implementação e manutenção de software.',
+      'Supervisão e coordenação das atividades envolvidas no desenvolvimento e implementação de software.',
     text: '',
     infos: [],
     infoText: '',
-    icon: Computer,
+    icon: ChartBar,
   },
   {
     slug: 'games',
@@ -65,7 +65,7 @@ export const AllAreasData: AllAreas[] = [
     text: '',
     infos: [],
     infoText: '',
-    icon: Computer,
+    icon: Gamepad2,
   },
   {
     slug: 'data-science',
@@ -75,6 +75,6 @@ export const AllAreasData: AllAreas[] = [
     text: '',
     infos: [],
     infoText: '',
-    icon: Computer,
+    icon: DatabaseZap,
   },
 ];
