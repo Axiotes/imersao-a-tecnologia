@@ -12,5 +12,6 @@ import { LucideIconData } from 'lucide-angular/icons/types';
 export class CardAreasComponent {
   @Input() public title!: string;
   @Input() public description!: string;
+  @Input() public icon!: LucideIconData;
   public arrow: LucideIconData = ArrowRight;
 }

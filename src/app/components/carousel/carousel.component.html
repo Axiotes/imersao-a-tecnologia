@@ -9,6 +9,7 @@
       *ngFor="let area of areasList; let i = index"
       [title]="area.title"
       [description]="area.description"
+      [icon]="area.icon"
       [ngClass]="getClass(i)"
       [ngStyle]="{ right: getDistance(i) + 'px' }"
     ></app-areas>
