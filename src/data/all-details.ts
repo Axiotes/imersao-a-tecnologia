@@ -132,4 +132,8 @@ export const allDetails: AllDetails[] = [
       },
     ],
   },
+  {
+    slug: 'design',
+    infoDetails: [],
+  },
 ];
