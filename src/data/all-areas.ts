@@ -1,4 +1,11 @@
-import { BrainCircuit, ChartBar, Computer, DatabaseZap, Gamepad2, PenTool } from 'lucide-angular';
+import {
+  BrainCircuit,
+  ChartBar,
+  Computer,
+  DatabaseZap,
+  Gamepad2,
+  PenTool,
+} from 'lucide-angular';
 import { AllAreas } from '../types/all-areas.type';
 
 export const AllAreasData: AllAreas[] = [
@@ -7,14 +14,14 @@ export const AllAreasData: AllAreas[] = [
     title: 'Design UI/UX',
     description:
       'Concentra na criação e aprimoramento das interfaces com as quais os usuários interagem em produtos digitais.',
-    text: '',
+    text: 'A área de design UI/UX envolve a construir e aprimorar de interfaces e experiências de usuário em produtos digitais, como sites, aplicativos e sistemas. UI (User Interface): Diz respeito a criação da parte visual de um app ou site, aplicando cores, layouts, ícones, botões e outros aspectos que dão vida ao projeto. UX (User Experience): Está relacionado a toda experiência que o usuário irá passar interagindo com com a página, tendo a responsabilidade de entender a visão do usuário sob o produto, garantindo navegação fluida e fácil e aspectos assesíveis para qualquer pessoa.',
     infos: [
       {
         slug: 'design',
         title: 'Design',
         description: '',
-        tags: ['Figma', 'Adobe XD', 'Sketch'],
-      }
+        tags: ['Design UI', 'Design UX'],
+      },
     ],
     infoText: '',
     icon: PenTool,
@@ -48,7 +55,8 @@ export const AllAreasData: AllAreas[] = [
       {
         slug: 'back-end',
         title: 'Back-end',
-        description: 'O desenvolvimento back-end é a área responsável por tudo que acontece por trás de um site ou aplicativo. Ele envolve a criação e gerenciamento de servidores, bancos de dados e APIs que garantem o funcionamento correto das funcionalidades do sistema. Fazendo o processamento de solicitações dos usuários, realiza operações lógicas, acessa e armazena dados de forma segura, e retorna as respostas apropriadas para o front-end.',
+        description:
+          'O desenvolvimento back-end é a área responsável por tudo que acontece por trás de um site ou aplicativo. Ele envolve a criação e gerenciamento de servidores, bancos de dados e APIs que garantem o funcionamento correto das funcionalidades do sistema. Fazendo o processamento de solicitações dos usuários, realiza operações lógicas, acessa e armazena dados de forma segura, e retorna as respostas apropriadas para o front-end.',
         tags: ['Java', 'SQL', 'Spring'],
       },
     ],

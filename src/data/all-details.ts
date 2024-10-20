@@ -134,6 +134,52 @@ export const allDetails: AllDetails[] = [
   },
   {
     slug: 'design',
-    infoDetails: [],
+    infoDetails: [
+      {
+        title: 'Conhecendo o mundo do Design UI',
+        subtitle: 'UI Design',
+        text: 'Entendendo como funciona UI design, como as cores influenciam no contexto visual, aprendendo a selecionar tamanhos e fontes respeitando hierarquia e princípios do mundo do design.',
+        videos: [
+          {
+            title: 'Nadine Fronza | Tudo sobre UI',
+            link: 'https://www.youtube.com/watch?v=YniraoHEo-Q',
+          },
+          {
+            title: 'Chief of Design | Curso de Ui',
+            link: 'https://www.youtube.com/playlist?list=PLwgL9IEA0PxWjVuQrP_E760f6JpJssTXD',
+          },
+        ],
+      },
+      {
+        title: 'Conhecendo o mundo do Design UI',
+        subtitle: 'UX Design',
+        text: 'Aprender a analisar todo caminho que o usuário percorre durante o uso do produto é algo essencial para o UX Design. Criando organização de informações de forma clara e intuitiva para qualquer usuário.',
+        videos: [
+          {
+            title: 'Nadine Fronza | Tudo sobre UX',
+            link: 'https://www.youtube.com/watch?v=-VPQpTf91OA',
+          },
+          {
+            title: 'Chief of Design | Curso de UX',
+            link: 'https://www.youtube.com/playlist?list=PLwgL9IEA0PxXwYSLBFSEuxZigG07_iet-',
+          },
+        ],
+      },
+      {
+        title: 'Ferramentas de desenvolvimento para Design UI/UX',
+        subtitle: 'Ferramentas',
+        text: 'Figma: Utilizado para protetipagem, wireframe e design para apps e sites. Miro: Construção de jornadas de usuário, brainstorming e colaboração em equipe.',
+        videos: [
+          {
+            title: 'Figma',
+            link: 'https://www.figma.com/files/team/1288260171557235637/recents-and-sharing/recently-viewed?fuid=1235549049993438809',
+          },
+          {
+            title: 'Adobe XD',
+            link: 'https://miro.com/?gclsrc=aw.ds&utm_source=google&utm_medium=cpc&utm_campaign=S%7CGOO%7CBRN%7CBR%7CEN-EN%7CBrand%7CExact&utm_adgroup=&adgroupid=140666046613&utm_custom=18259414502&utm_content=667973357956&utm_term=miro&matchtype=e&device=c&location=1001625&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUG-s10IadcoS03J739YmfUDZHkB7Mx-3RiJDfL53wsBOKxj7FnOC8xoCJ4MQAvD_BwE',
+          },
+        ],
+      },
+    ],
   },
 ];
