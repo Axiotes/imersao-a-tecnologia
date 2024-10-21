@@ -2,7 +2,7 @@
 @import "../../../styles/_variables";
 
 .all {
-  width: calc(100vw - 60px);
+  width: 100%;
   min-height: calc(100vh - 330px);
   background-color: $color-neural-900;
   display: flex;

@@ -8,6 +8,7 @@
       [description]="areas.description"
       [icon]="areas.icon"
       routerLink="/trail/{{areas.slug}}"
+      [queryParams]="{ typeInfos: areas.typeInfo }"
     ></app-card-areas>
   </div>
 </main>

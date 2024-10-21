@@ -27,44 +27,10 @@ import { Infos } from '../../../types/infos.type';
   templateUrl: './header-content.component.html',
   styleUrl: './header-content.component.scss',
 })
-export class HeaderContentComponent implements OnInit, OnChanges {
-  @Input({ required: true }) infos!: Infos;
-  @Output() sendArea: EventEmitter<AllAreas> = new EventEmitter<AllAreas>();
-
-  public slug!: string;
-  public allArea: AllAreas[] = AllAreasData;
-  public area!: AllAreas;
-
-  public title!: string;
-  public text!: string;
-  public tags: string[] = [];
-
+export class HeaderContentComponent {
+  @Input() public icon!: LucideIconData;
+  @Input() public title!: string;
+  @Input() public text!: string;
+  @Input() public tags: string[] = [];
   public arrowRight: LucideIconData = ArrowRightFromLine;
-
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
-      this.slug = params.get('slug')!;
-    });
-
-    this.allArea
-      .filter((area) => area.slug === this.slug)
-      .map((area) => {
-        this.area = area;
-        this.title = area.title;
-        this.text = area.text;
-        area.infos.forEach((info) => this.tags.push(info.title));
-        this.sendArea.emit(area);
-      });
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['infos']) {
-      this.tags = [];
-      this.title = this.infos?.title;
-      this.text = this.infos?.description;
-      this.infos?.tags.forEach((tag) => this.tags.push(tag));
-    }
-  }
 }

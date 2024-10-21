@@ -132,4 +132,224 @@ export const allDetails: AllDetails[] = [
       },
     ],
   },
+  {
+    slug: 'design',
+    infoDetails: [
+      {
+        title: 'Conhecendo o mundo do Design UI',
+        subtitle: 'UI Design',
+        text: 'Entendendo como funciona UI design, como as cores influenciam no contexto visual, aprendendo a selecionar tamanhos e fontes respeitando hierarquia e princípios do mundo do design.',
+        videos: [
+          {
+            title: 'Nadine Fronza | Tudo sobre UI',
+            link: 'https://www.youtube.com/watch?v=YniraoHEo-Q',
+          },
+          {
+            title: 'Chief of Design | Curso de Ui',
+            link: 'https://www.youtube.com/playlist?list=PLwgL9IEA0PxWjVuQrP_E760f6JpJssTXD',
+          },
+        ],
+      },
+      {
+        title: 'Conhecendo o mundo do Design UI',
+        subtitle: 'UX Design',
+        text: 'Aprender a analisar todo caminho que o usuário percorre durante o uso do produto é algo essencial para o UX Design. Criando organização de informações de forma clara e intuitiva para qualquer usuário.',
+        videos: [
+          {
+            title: 'Nadine Fronza | Tudo sobre UX',
+            link: 'https://www.youtube.com/watch?v=-VPQpTf91OA',
+          },
+          {
+            title: 'Chief of Design | Curso de UX',
+            link: 'https://www.youtube.com/playlist?list=PLwgL9IEA0PxXwYSLBFSEuxZigG07_iet-',
+          },
+        ],
+      },
+      {
+        title: 'Ferramentas de desenvolvimento para Design UI/UX',
+        subtitle: 'Ferramentas',
+        text: 'Figma: Utilizado para protetipagem, wireframe e design para apps e sites. Miro: Construção de jornadas de usuário, brainstorming e colaboração em equipe.',
+        videos: [
+          {
+            title: 'Figma',
+            link: 'https://www.figma.com/files/team/1288260171557235637/recents-and-sharing/recently-viewed?fuid=1235549049993438809',
+          },
+          {
+            title: 'Adobe XD',
+            link: 'https://miro.com/?gclsrc=aw.ds&utm_source=google&utm_medium=cpc&utm_campaign=S%7CGOO%7CBRN%7CBR%7CEN-EN%7CBrand%7CExact&utm_adgroup=&adgroupid=140666046613&utm_custom=18259414502&utm_content=667973357956&utm_term=miro&matchtype=e&device=c&location=1001625&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUG-s10IadcoS03J739YmfUDZHkB7Mx-3RiJDfL53wsBOKxj7FnOC8xoCJ4MQAvD_BwE',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'ia',
+    infoDetails: [
+      {
+        title: 'Introdução a Python',
+        subtitle: 'Aprendendo Python',
+        text: 'O Python é uma das linguagens de programação mais populares para área de IA. Uma linguagem muito usada para quem está iniciando na área da programação e um requisito essencial para trabalhar com inteligência artificial.',
+        videos: [
+          {
+            title: 'Curso em Vídeo | Python',
+            link: 'https://www.youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0',
+          },
+        ],
+      },
+      {
+        title: 'Aprendendo os fundamentos de IA',
+        subtitle: 'Fundamentos IA',
+        text: 'Conhecendo os principais fundamentos da inteligência artificial como machine learning e redes neurais para uma base consolidade em IA.',
+        videos: [
+          {
+            title: 'Curso em Vídeo | IA',
+            link: 'https://www.youtube.com/playlist?list=PLHz_AreHm4dm24MhlWJYiR_Rm7TFtvs6S',
+          },
+          {
+            title: 'Universo Discreto | Redes Neurais',
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtygNTsgC_M8c9a-p5biCjho',
+          },
+          {
+            title: 'Universo Discreto | Machine Learning',
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtzhZtI-bWWHFtCfxtjmBdIW',
+          },
+        ],
+      },
+      {
+        title: 'Projeto',
+        subtitle: 'Projeto',
+        text: 'Projetos são uma parte essencial do seu aprendizado, se desafiando e consolidando todos os conceitos aprendidos e fixando e utilizando para aplicações no seu portfolio.',
+        videos: [
+          {
+            title: 'Hashtag | Projeto',
+            link: 'https://www.youtube.com/playlist?list=PLpdAy0tYrnKyVQDckS5IDB24QrSap2u8y',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'data-science',
+    infoDetails: [
+      {
+        title: 'Introdução a Ciência de Dados',
+        subtitle: 'Introdução',
+        text: 'Entenda o que um cientista de dados faz e como funciona está área que busca informações em meios a grandes quantidade de dados para achar soluções no nosso cotidiano.',
+        videos: [
+          {
+            title: 'Jerry Strazzeri | Data Science',
+            link: 'https://www.youtube.com/watch?v=_365KpviZ9o',
+          },
+          {
+            title: 'Alura | Guia de Carreira',
+            link: 'https://www.youtube.com/watch?v=7KhaiCC3fJQ',
+          },
+        ],
+      },
+      {
+        title: 'Matemática e Estatística',
+        subtitle: 'Matemática e Estatística',
+        text: 'Em tratamentos de dados, matemática é algo muito utilizado para qualquer operação em ciência de dados, sendo assim, sendo um forte aliado para construção de uma base no seu conhecimento em ciência de dados.',
+        videos: [
+          {
+            title: 'Mario Filho | Matemática em CD',
+            link: 'https://www.youtube.com/watch?v=niF_T21vdZ4',
+          },
+          {
+            title: 'Data Viking | Estastísticas',
+            link: 'https://www.youtube.com/watch?v=K_q6uCgV0Mk',
+          },
+        ],
+      },
+      {
+        title: 'Programação',
+        subtitle: 'Python',
+        text: 'Em Ciência de dados, a linguagem python assim também em inteligência artificial, é muito usada por ter uma linha de aprendizado da linguagem fácil e ser uma tecnologia com ferramentas poderosas para manipulação e visualização de dados.',
+        videos: [
+          {
+            title: 'Felipe Deschamps | Introdução',
+            link: 'https://www.youtube.com/watch?v=F608hzn_ygo',
+          },
+          {
+            title: 'Jerry Strazzeri | Python para CD',
+            link: 'https://www.youtube.com/watch?v=kIKdbBc6npU',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'games',
+    infoDetails: [
+      {
+        title: 'Conhecendo o mundo de desenvolvimento de games e C#',
+        subtitle: 'Introdução a C#',
+        text: 'C# é uma das linguagens de programação que é utilizada no Unity(Game Engine), utilizada para criar vida ao jogo adicionando funcionalidades e interações no seu jogo.',
+        videos: [
+          {
+            title: 'High Level | Unity iniciantes',
+            link: 'https://www.youtube.com/watch?v=fRPn_EFZJVI',
+          },
+          {
+            title: 'Crie Seus Jogos | C#',
+            link: 'https://www.youtube.com/watch?v=DA-DQsmPItU',
+          },
+        ],
+      },
+      {
+        title: 'Desenvolvendo Jogos',
+        subtitle: 'Play Game!',
+        text: 'Os jogos atualmente são desenvolvidos em um software que chamamos de Game Engine, é a plataforma usada para contruir e desenvolver o jogo, como por exemplo o Unity, um dos motores mais usados e ideal para quem quer conhecer a área.',
+        videos: [
+          {
+            title: 'Desenvolvendo Jogos | Projeto',
+            link: 'https://www.youtube.com/watch?v=7JPCXPrRSKk&list=PLzjwaizNOg6Ty_4dLPzF2ty6s9R6vb8RJ&index=3',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'gestao',
+    infoDetails: [
+      {
+        title: 'Introdução a gestão de projetos',
+        subtitle: 'Introdução',
+        text: 'Para um gestor na área de TI, é importante ter conhecimento sólido em fundamentos em conceitos de TI(como software, redes, sistemas etc), além de ser capaz de se comunicar de forma clara e eficaz com diferentes pessoas e motivar o time para que justo tenham o melhor desempenho possível.',
+        videos: [
+          {
+            title: 'Mario Trentim | Fundamentos de gestão',
+            link: 'https://www.figma.com/design/gKFuvi9WJ6edr1aYjkBqOq/CodeTrail?node-id=355-1150&node-type=frame&t=BVr82HM2EQSeLTcG-0',
+          },
+          {
+            title: 'Thiago Rodrigues | Gestão',
+            link: 'https://www.youtube.com/watch?v=Y2qnWUlk8Eg',
+          },
+        ],
+      },
+      {
+        title: 'Gestão de Desenvolvimento',
+        subtitle: 'Metodologias Ágeis',
+        text: 'Durante desenvolvimentos de projetos, são utilizados conceitos que chamamos de Metodologias Ágeis(Scrum. Kankan entre muitos outros), que diz respeito ao ciclo de vida de um projeto. promovendo práticas que o time de desenvolvimento tem que exercer para que o andamento do projeto não seja interrompido e seja entregue no prazo.',
+        videos: [
+          {
+            title: 'Código Fonte | Scrum',
+            link: 'https://www.youtube.com/watch?v=3aCww_1RnL0',
+          },
+          {
+            title: 'Frons Educação | Scrum e Kanban',
+            link: 'https://www.youtube.com/watch?v=QI90LBuFiL4',
+          },
+          {
+            title: 'Blog Abri | Kanban',
+            link: 'https://www.youtube.com/watch?v=K9b4JC5CsQs',
+          },
+          {
+            title: 'Blog Abri | Metodologias Ágeis',
+            link: 'https://www.youtube.com/watch?v=5ByWvpW2zw0',
+          },
+        ],
+      },
+    ],
+  },
 ];
