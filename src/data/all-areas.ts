@@ -99,8 +99,15 @@ export const AllAreasData: AllAreas[] = [
     title: 'Data Science',
     description:
       'A ciência de dados é uma prática que busca resolver problemas complexos através da análise de dados avançada',
-    text: '',
-    infos: [],
+    text: 'A área de ciência de dados se concentra em coletar, limpar, analisar, e entender grandes quantidades de dados, assim conseguindo extrair informações relevantes para tomadas de decisões. Sempre buscando padrões e tendências para assim resolver problemas do dia a dia.',
+    infos: [
+      {
+        slug: 'data-science',
+        title: 'Data Science',
+        description: '',
+        tags: ['Python', 'Estatística', 'Matemática', 'Dados'],
+      }
+    ],
     infoText: '',
     icon: DatabaseZap,
     typeInfo: 'details',

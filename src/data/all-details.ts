@@ -207,13 +207,13 @@ export const allDetails: AllDetails[] = [
           },
           {
             title: 'Universo Discreto | Redes Neurais',
-            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtygNTsgC_M8c9a-p5biCjho'
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtygNTsgC_M8c9a-p5biCjho',
           },
           {
             title: 'Universo Discreto | Machine Learning',
-            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtzhZtI-bWWHFtCfxtjmBdIW'
-          }
-        ]
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtzhZtI-bWWHFtCfxtjmBdIW',
+          },
+        ],
       },
       {
         title: 'Projeto',
@@ -224,8 +224,58 @@ export const allDetails: AllDetails[] = [
             title: 'Hashtag | Projeto',
             link: 'https://www.youtube.com/playlist?list=PLpdAy0tYrnKyVQDckS5IDB24QrSap2u8y',
           },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'data-science',
+    infoDetails: [
+      {
+        title: 'Introdução a Ciência de Dados',
+        subtitle: 'Introdução',
+        text: 'Entenda o que um cientista de dados faz e como funciona está área que busca informações em meios a grandes quantidade de dados para achar soluções no nosso cotidiano.',
+        videos: [
+          {
+            title: 'Jerry Strazzeri | Data Science',
+            link: 'https://www.youtube.com/watch?v=_365KpviZ9o',
+          },
+          {
+            title: 'Alura | Guia de Carreira',
+            link: 'https://www.youtube.com/watch?v=7KhaiCC3fJQ',
+          },
+        ],
+      },
+      {
+        title: 'Matemática e Estatística',
+        subtitle: 'Matemática e Estatística',
+        text: 'Em tratamentos de dados, matemática é algo muito utilizado para qualquer operação em ciência de dados, sendo assim, sendo um forte aliado para construção de uma base no seu conhecimento em ciência de dados.',
+        videos: [
+          {
+            title: 'Mario Filho | Matemática em CD',
+            link: 'https://www.youtube.com/watch?v=niF_T21vdZ4',
+          },
+          {
+            title: 'Data Viking | Estastísticas',
+            link: 'https://www.youtube.com/watch?v=K_q6uCgV0Mk',
+          },
+        ],
+      },
+      {
+        title: 'Programação',
+        subtitle: 'Python',
+        text: 'Em Ciência de dados, a linguagem python assim também em inteligência artificial, é muito usada por ter uma linha de aprendizado da linguagem fácil e ser uma tecnologia com ferramentas poderosas para manipulação e visualização de dados.',
+        videos: [
+          {
+            title: 'Felipe Deschamps | Introdução',
+            link: 'https://www.youtube.com/watch?v=F608hzn_ygo',
+          },
+          {
+            title: 'Jerry Strazzeri | Python para CD',
+            link: 'https://www.youtube.com/watch?v=kIKdbBc6npU',
+          },
+        ],
+      },
+    ],
   },
 ];
