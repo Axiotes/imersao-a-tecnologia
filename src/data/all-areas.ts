@@ -32,8 +32,15 @@ export const AllAreasData: AllAreas[] = [
     title: 'Inteligência artificial',
     description:
       'Permite que computadores e máquinas simulem a capacidade de resolução de problemas e a inteligência humana.',
-    text: '',
-    infos: [],
+    text: 'A inteligência Artificial é uma área que busca desenvolver sistemas com capacidade de simular uma inteligência humana. Basicamente consiste em criar máquinas que posso elas mesmas aprender, raciocinar, tomar decisões e resolver problemas e tarefas de forma autônoma. É uma área que exige que tenha conhecimento em Python(linguagem de programação muito utilizada para IA) e matemática(estatísticas, álgebra e cálculos).',
+    infos: [
+      {
+        slug: 'ia',
+        title: 'Inteligência Artificial',
+        description: '',
+        tags: ['Python', 'Machine Learning', 'Matemática'],
+      }
+    ],
     infoText: '',
     icon: BrainCircuit,
     typeInfo: 'details',

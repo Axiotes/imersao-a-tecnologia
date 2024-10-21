@@ -182,4 +182,50 @@ export const allDetails: AllDetails[] = [
       },
     ],
   },
+  {
+    slug: 'ia',
+    infoDetails: [
+      {
+        title: 'Introdução a Python',
+        subtitle: 'Aprendendo Python',
+        text: 'O Python é uma das linguagens de programação mais populares para área de IA. Uma linguagem muito usada para quem está iniciando na área da programação e um requisito essencial para trabalhar com inteligência artificial.',
+        videos: [
+          {
+            title: 'Curso em Vídeo | Python',
+            link: 'https://www.youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0',
+          },
+        ],
+      },
+      {
+        title: 'Aprendendo os fundamentos de IA',
+        subtitle: 'Fundamentos IA',
+        text: 'Conhecendo os principais fundamentos da inteligência artificial como machine learning e redes neurais para uma base consolidade em IA.',
+        videos: [
+          {
+            title: 'Curso em Vídeo | IA',
+            link: 'https://www.youtube.com/playlist?list=PLHz_AreHm4dm24MhlWJYiR_Rm7TFtvs6S',
+          },
+          {
+            title: 'Universo Discreto | Redes Neurais',
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtygNTsgC_M8c9a-p5biCjho'
+          },
+          {
+            title: 'Universo Discreto | Machine Learning',
+            link: 'https://www.youtube.com/playlist?list=PL-t7zzWJWPtzhZtI-bWWHFtCfxtjmBdIW'
+          }
+        ]
+      },
+      {
+        title: 'Projeto',
+        subtitle: 'Projeto',
+        text: 'Projetos são uma parte essencial do seu aprendizado, se desafiando e consolidando todos os conceitos aprendidos e fixando e utilizando para aplicações no seu portfolio.',
+        videos: [
+          {
+            title: 'Hashtag | Projeto',
+            link: 'https://www.youtube.com/playlist?list=PLpdAy0tYrnKyVQDckS5IDB24QrSap2u8y',
+          },
+        ]
+      }
+    ]
+  },
 ];
