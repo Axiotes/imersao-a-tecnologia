@@ -278,4 +278,35 @@ export const allDetails: AllDetails[] = [
       },
     ],
   },
+  {
+    slug: 'games',
+    infoDetails: [
+      {
+        title: 'Conhecendo o mundo de desenvolvimento de games e C#',
+        subtitle: 'Introdução a C#',
+        text: 'C# é uma das linguagens de programação que é utilizada no Unity(Game Engine), utilizada para criar vida ao jogo adicionando funcionalidades e interações no seu jogo.',
+        videos: [
+          {
+            title: 'High Level | Unity iniciantes',
+            link: 'https://www.youtube.com/watch?v=fRPn_EFZJVI',
+          },
+          {
+            title: 'Crie Seus Jogos | C#',
+            link: 'https://www.youtube.com/watch?v=DA-DQsmPItU',
+          }
+        ],
+      },
+      {
+        title: 'Desenvolvendo Jogos',
+        subtitle: 'Play Game!',
+        text: 'Os jogos atualmente são desenvolvidos em um software que chamamos de Game Engine, é a plataforma usada para contruir e desenvolver o jogo, como por exemplo o Unity, um dos motores mais usados e ideal para quem quer conhecer a área.',
+        videos: [
+          {
+            title: 'Desenvolvendo Jogos | Projeto',
+            link: 'https://www.youtube.com/watch?v=7JPCXPrRSKk&list=PLzjwaizNOg6Ty_4dLPzF2ty6s9R6vb8RJ&index=3',
+          },
+        ],
+      }
+    ],
+  },
 ];

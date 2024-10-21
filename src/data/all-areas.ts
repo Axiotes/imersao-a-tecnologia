@@ -88,8 +88,15 @@ export const AllAreasData: AllAreas[] = [
     title: 'Games',
     description:
       'Arte de criar jogos e descreve o planejamento, desenvolvimento e o lançamento de um jogo.',
-    text: '',
-    infos: [],
+    text: 'A área de games é uma das indústrias mais incríveis e em crescimento no mundo da tecnologia e entretenimento. Ela envolve diversas disciplinas, desde desenvolvimento técnico até design de jogo, designer gráfico e narrativa. Contendo diversas áreas que você pode atuar para desenvolvimento de jogos.',
+    infos: [
+      {
+        slug: 'games',
+        title: 'Games',
+        description: '',
+        tags: ['Unity', 'C#'],
+      }
+    ],
     infoText: '',
     icon: Gamepad2,
     typeInfo: 'details',
