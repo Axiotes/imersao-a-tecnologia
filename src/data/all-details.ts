@@ -293,7 +293,7 @@ export const allDetails: AllDetails[] = [
           {
             title: 'Crie Seus Jogos | C#',
             link: 'https://www.youtube.com/watch?v=DA-DQsmPItU',
-          }
+          },
         ],
       },
       {
@@ -306,7 +306,50 @@ export const allDetails: AllDetails[] = [
             link: 'https://www.youtube.com/watch?v=7JPCXPrRSKk&list=PLzjwaizNOg6Ty_4dLPzF2ty6s9R6vb8RJ&index=3',
           },
         ],
-      }
+      },
+    ],
+  },
+  {
+    slug: 'gestao',
+    infoDetails: [
+      {
+        title: 'Introdução a gestão de projetos',
+        subtitle: 'Introdução',
+        text: 'Para um gestor na área de TI, é importante ter conhecimento sólido em fundamentos em conceitos de TI(como software, redes, sistemas etc), além de ser capaz de se comunicar de forma clara e eficaz com diferentes pessoas e motivar o time para que justo tenham o melhor desempenho possível.',
+        videos: [
+          {
+            title: 'Mario Trentim | Fundamentos de gestão',
+            link: 'https://www.figma.com/design/gKFuvi9WJ6edr1aYjkBqOq/CodeTrail?node-id=355-1150&node-type=frame&t=BVr82HM2EQSeLTcG-0',
+          },
+          {
+            title: 'Thiago Rodrigues | Gestão',
+            link: 'https://www.youtube.com/watch?v=Y2qnWUlk8Eg',
+          },
+        ],
+      },
+      {
+        title: 'Gestão de Desenvolvimento',
+        subtitle: 'Metodologias Ágeis',
+        text: 'Durante desenvolvimentos de projetos, são utilizados conceitos que chamamos de Metodologias Ágeis(Scrum. Kankan entre muitos outros), que diz respeito ao ciclo de vida de um projeto. promovendo práticas que o time de desenvolvimento tem que exercer para que o andamento do projeto não seja interrompido e seja entregue no prazo.',
+        videos: [
+          {
+            title: 'Código Fonte | Scrum',
+            link: 'https://www.youtube.com/watch?v=3aCww_1RnL0',
+          },
+          {
+            title: 'Frons Educação | Scrum e Kanban',
+            link: 'https://www.youtube.com/watch?v=QI90LBuFiL4',
+          },
+          {
+            title: 'Blog Abri | Kanban',
+            link: 'https://www.youtube.com/watch?v=K9b4JC5CsQs',
+          },
+          {
+            title: 'Blog Abri | Metodologias Ágeis',
+            link: 'https://www.youtube.com/watch?v=5ByWvpW2zw0',
+          },
+        ],
+      },
     ],
   },
 ];

@@ -39,7 +39,7 @@ export const AllAreasData: AllAreas[] = [
         title: 'Inteligência Artificial',
         description: '',
         tags: ['Python', 'Machine Learning', 'Matemática'],
-      }
+      },
     ],
     infoText: '',
     icon: BrainCircuit,
@@ -77,8 +77,15 @@ export const AllAreasData: AllAreas[] = [
     title: 'Gestão',
     description:
       'Supervisão e coordenação das atividades envolvidas no desenvolvimento e implementação de software.',
-    text: '',
-    infos: [],
+    text: 'Gestão é uma área crucial em tecnologia, responsável pela combinação de habilidades em liderança, técnicos e processos que são utilizados em times de desenvolvimento. Toda a gestão tem o dever de organizar e gerir recursos tecnológico de uma empresa de maneira que sejam eficientes e estratégica para alcançar objetivos da corporação.',
+    infos: [
+      {
+        slug: 'gestao',
+        title: 'Gestão',
+        description: '',
+        tags: ['Planejamento', 'Comunicação', 'Liderança'],
+      },
+    ],
     infoText: '',
     icon: ChartBar,
     typeInfo: 'details',
@@ -95,7 +102,7 @@ export const AllAreasData: AllAreas[] = [
         title: 'Games',
         description: '',
         tags: ['Unity', 'C#'],
-      }
+      },
     ],
     infoText: '',
     icon: Gamepad2,
@@ -113,7 +120,7 @@ export const AllAreasData: AllAreas[] = [
         title: 'Data Science',
         description: '',
         tags: ['Python', 'Estatística', 'Matemática', 'Dados'],
-      }
+      },
     ],
     infoText: '',
     icon: DatabaseZap,
