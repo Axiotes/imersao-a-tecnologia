@@ -175,7 +175,7 @@ export const allDetails: AllDetails[] = [
             link: 'https://www.figma.com/files/team/1288260171557235637/recents-and-sharing/recently-viewed?fuid=1235549049993438809',
           },
           {
-            title: 'Adobe XD',
+            title: 'Miro',
             link: 'https://miro.com/?gclsrc=aw.ds&utm_source=google&utm_medium=cpc&utm_campaign=S%7CGOO%7CBRN%7CBR%7CEN-EN%7CBrand%7CExact&utm_adgroup=&adgroupid=140666046613&utm_custom=18259414502&utm_content=667973357956&utm_term=miro&matchtype=e&device=c&location=1001625&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUG-s10IadcoS03J739YmfUDZHkB7Mx-3RiJDfL53wsBOKxj7FnOC8xoCJ4MQAvD_BwE',
           },
         ],
@@ -319,7 +319,7 @@ export const allDetails: AllDetails[] = [
         videos: [
           {
             title: 'Mario Trentim | Fundamentos de gestão',
-            link: 'https://www.figma.com/design/gKFuvi9WJ6edr1aYjkBqOq/CodeTrail?node-id=355-1150&node-type=frame&t=BVr82HM2EQSeLTcG-0',
+            link: 'https://youtube.com/playlist?list=PLnhUek92-enioRGAFZ9Vf_qfWt7rCR8vw&si=2tbuIO0BxvwTmG0F',
           },
           {
             title: 'Thiago Rodrigues | Gestão',
