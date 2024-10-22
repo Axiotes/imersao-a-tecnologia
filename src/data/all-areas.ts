@@ -25,7 +25,6 @@ export const AllAreasData: AllAreas[] = [
     ],
     infoText: '',
     icon: PenTool,
-    typeInfo: 'details',
   },
   {
     slug: 'ia',
@@ -43,7 +42,6 @@ export const AllAreasData: AllAreas[] = [
     ],
     infoText: '',
     icon: BrainCircuit,
-    typeInfo: 'details',
   },
   {
     slug: 'dev-web',
@@ -70,7 +68,6 @@ export const AllAreasData: AllAreas[] = [
     infoText:
       'Para se tornar um desenvolvedor web, é preciso dominar linguagens de programação, bibliotecas e frameworks. A área de desenvolvimento web é dividido em duas partes: Front-end e Back-end.',
     icon: Computer,
-    typeInfo: 'all',
   },
   {
     slug: 'gestao',
@@ -88,7 +85,6 @@ export const AllAreasData: AllAreas[] = [
     ],
     infoText: '',
     icon: ChartBar,
-    typeInfo: 'details',
   },
   {
     slug: 'games',
@@ -106,7 +102,6 @@ export const AllAreasData: AllAreas[] = [
     ],
     infoText: '',
     icon: Gamepad2,
-    typeInfo: 'details',
   },
   {
     slug: 'data-science',
@@ -124,6 +119,5 @@ export const AllAreasData: AllAreas[] = [
     ],
     infoText: '',
     icon: DatabaseZap,
-    typeInfo: 'details',
   },
 ];

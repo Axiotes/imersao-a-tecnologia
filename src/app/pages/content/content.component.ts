@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllAreas } from '../../../types/all-areas.type';
 import { Infos } from '../../../types/infos.type';
-import { TypeInfos } from '../../../types/type-infos.type';
 import { ActivatedRoute } from '@angular/router';
 import { AllAreasData } from '../../../data/all-areas';
 import { LucideIconData } from 'lucide-angular/icons/types';
@@ -18,8 +17,8 @@ export class ContentComponent implements OnInit {
   public allArea: AllAreas[] = AllAreasData;
   public allDetails: AllDetails[] = allDetails;
   public infoDetails!: InfoDetails[];
+  public details: boolean = false;
   public slug!: string;
-  public typeInfo: TypeInfos = 'all';
   public area!: AllAreas;
   public infos!: Infos;
 
@@ -41,22 +40,7 @@ export class ContentComponent implements OnInit {
         this.area = area;
       });
 
-    this.route.queryParams.subscribe((params) => {
-      this.typeInfo = params['typeInfos'];
-
-      this.title = this.area.title;
-      this.icon = this.area.icon;
-      this.text = this.area.text;
-
-      if (this.typeInfo === 'all') {
-        this.area.infos.forEach((info) => this.tags.push(info.title));
-
-        return;
-      }
-
-      this.infos = this.area.infos[0];
-      this.tags = this.infos.tags;
-    });
+    this.verifyDetails();
   }
 
   public recieveInfo(info: Infos): void {
@@ -65,6 +49,22 @@ export class ContentComponent implements OnInit {
     this.icon = this.area.icon;
     this.text = info.description;
     this.tags = info.tags;
-    this.typeInfo = 'details';
+    this.details = true;
+  }
+
+  private verifyDetails(): void {
+    this.title = this.area.title;
+    this.icon = this.area.icon;
+    this.text = this.area.text;
+
+    if (this.area.infos.length > 1) {
+      this.area.infos.forEach((info) => this.tags.push(info.title));
+      this.details = true;
+      return;
+    }
+
+    this.infos = this.area.infos[0];
+    this.tags = this.infos.tags;
+    this.details = false;
   }
 }
