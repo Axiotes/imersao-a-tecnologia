@@ -8,6 +8,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import {
+  ArrowLeftToLine,
   ArrowRightFromLine,
   Computer,
   LucideAngularModule,
@@ -28,9 +29,10 @@ import { Infos } from '../../../types/infos.type';
   styleUrl: './header-content.component.scss',
 })
 export class HeaderContentComponent {
+  @Output() public back: EventEmitter<void> = new EventEmitter();
   @Input() public icon!: LucideIconData;
   @Input() public title!: string;
   @Input() public text!: string;
   @Input() public tags: string[] = [];
-  public arrowRight: LucideIconData = ArrowRightFromLine;
+  public arrow: LucideIconData = ArrowLeftToLine;
 }

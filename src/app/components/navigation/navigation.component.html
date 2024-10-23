@@ -6,7 +6,13 @@
       *ngFor="let icon of icons"
       [img]="icon.icon"
       [routerLink]="icon.route"
+      [ngClass]="{ active: icon.route === currentRoute }"
       class="navigation__icons-icon"
+    ></i-lucide>
+    <i-lucide
+      *ngIf="getIcon()"
+      [img]="getIcon()"
+      class="active"
     ></i-lucide>
   </nav>
 </div>

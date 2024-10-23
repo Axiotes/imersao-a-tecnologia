@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AllAreas } from '../../../types/all-areas.type';
 import { Infos } from '../../../types/infos.type';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AllAreasData } from '../../../data/all-areas';
 import { LucideIconData } from 'lucide-angular/icons/types';
 import { AllDetails } from '../../../types/all-details.type';
@@ -17,7 +17,7 @@ export class ContentComponent implements OnInit {
   public allArea: AllAreas[] = AllAreasData;
   public allDetails: AllDetails[] = allDetails;
   public infoDetails!: InfoDetails[];
-  public details: boolean = true;
+  public details!: boolean;
   public slug!: string;
   public area!: AllAreas;
   public infos: Infos = {
@@ -32,7 +32,7 @@ export class ContentComponent implements OnInit {
   public text!: string;
   public tags: string[] = [];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
@@ -54,7 +54,16 @@ export class ContentComponent implements OnInit {
     this.icon = this.area.icon;
     this.text = info.description;
     this.tags = info.tags;
-    this.details = false;
+    this.details = true;
+  }
+
+  public back(): void {
+    if (!this.details || this.area.infos.length === 1) {
+      this.router.navigate(['/trail']);
+      return;
+    }
+
+    this.initializeDetails();
   }
 
   private initializeDetails(): void {
@@ -63,13 +72,14 @@ export class ContentComponent implements OnInit {
     this.text = this.area.text;
 
     if (this.area.infos.length > 1) {
+      this.tags = [];
       this.area.infos.forEach((info) => this.tags.push(info.title));
-      this.details = true;
+      this.details = false;
       return;
     }
 
     this.infos = this.area.infos[0];
     this.tags = this.infos.tags;
-    this.details = false;
+    this.details = true;
   }
 }

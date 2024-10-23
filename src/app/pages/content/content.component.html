@@ -4,16 +4,17 @@
     [icon]="icon"
     [text]="text"
     [tags]="tags"
+    (back)="back()"
   ></app-header-content>
 
   <app-all-infos
-    *ngIf="details"
+    *ngIf="!details"
     [area]="area"
     (infos)="recieveInfo($event)"
   ></app-all-infos>
 
   <app-details
-    *ngIf="!details"
+    *ngIf="details"
     [slug]="infos.slug"
   ></app-details>
 </main>
