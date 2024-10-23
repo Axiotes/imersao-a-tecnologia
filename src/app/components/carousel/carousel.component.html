@@ -12,6 +12,7 @@
       [icon]="area.icon"
       [ngClass]="getClass(i)"
       [ngStyle]="{ right: getDistance(i) + 'px' }"
+      routerLink="/trail/{{ area.slug }}"
     ></app-areas>
   </div>
   <div class="container__nav">
