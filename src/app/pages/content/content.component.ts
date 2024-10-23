@@ -17,10 +17,15 @@ export class ContentComponent implements OnInit {
   public allArea: AllAreas[] = AllAreasData;
   public allDetails: AllDetails[] = allDetails;
   public infoDetails!: InfoDetails[];
-  public details: boolean = false;
+  public details: boolean = true;
   public slug!: string;
   public area!: AllAreas;
-  public infos!: Infos;
+  public infos: Infos = {
+    slug: '',
+    title: '',
+    description: '',
+    tags: [],
+  };
 
   public title!: string;
   public icon!: LucideIconData;
@@ -40,7 +45,7 @@ export class ContentComponent implements OnInit {
         this.area = area;
       });
 
-    this.verifyDetails();
+    this.initializeDetails();
   }
 
   public recieveInfo(info: Infos): void {
@@ -49,10 +54,10 @@ export class ContentComponent implements OnInit {
     this.icon = this.area.icon;
     this.text = info.description;
     this.tags = info.tags;
-    this.details = true;
+    this.details = false;
   }
 
-  private verifyDetails(): void {
+  private initializeDetails(): void {
     this.title = this.area.title;
     this.icon = this.area.icon;
     this.text = this.area.text;
