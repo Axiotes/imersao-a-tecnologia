@@ -8,6 +8,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import {
+  ArrowLeftToLine,
   ArrowRightFromLine,
   Computer,
   LucideAngularModule,
@@ -32,5 +33,5 @@ export class HeaderContentComponent {
   @Input() public title!: string;
   @Input() public text!: string;
   @Input() public tags: string[] = [];
-  public arrowRight: LucideIconData = ArrowRightFromLine;
+  public arrow: LucideIconData = ArrowLeftToLine;
 }
