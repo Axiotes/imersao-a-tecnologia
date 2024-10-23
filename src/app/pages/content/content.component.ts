@@ -58,8 +58,6 @@ export class ContentComponent implements OnInit {
   }
 
   public back(): void {
-    console.log(this.details);
-
     if (!this.details || this.area.infos.length === 1) {
       this.router.navigate(['/trail']);
       return;
