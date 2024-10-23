@@ -29,6 +29,7 @@ import { Infos } from '../../../types/infos.type';
   styleUrl: './header-content.component.scss',
 })
 export class HeaderContentComponent {
+  @Output() public back: EventEmitter<void> = new EventEmitter();
   @Input() public icon!: LucideIconData;
   @Input() public title!: string;
   @Input() public text!: string;

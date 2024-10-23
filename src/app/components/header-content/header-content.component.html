@@ -1,9 +1,5 @@
 <header class="header">
-  <i-lucide
-    [img]="arrow"
-    class="header__icon"
-    routerLink="/trail"
-  ></i-lucide>
+  <i-lucide [img]="arrow" class="header__icon" (click)="back.emit()"></i-lucide>
 
   <span class="header__title">
     <h1>{{ title }}</h1>
