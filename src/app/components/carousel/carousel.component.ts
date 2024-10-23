@@ -1,13 +1,14 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { Areas } from '../../../types/area-list.type';
 import { AreasListData } from '../../../data/areas-list';
 import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { AreasComponent } from '../areas/areas.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule, AreasComponent, NgClass, NgStyle],
+  imports: [CommonModule, AreasComponent, NgClass, NgStyle, RouterLink],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss',
 })
