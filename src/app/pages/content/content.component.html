@@ -7,10 +7,13 @@
   ></app-header-content>
 
   <app-all-infos
-    *ngIf="typeInfo === 'all'"
+    *ngIf="details"
     [area]="area"
     (infos)="recieveInfo($event)"
   ></app-all-infos>
 
-  <app-details *ngIf="typeInfo === 'details'" [slug]="infos.slug"></app-details>
+  <app-details
+    *ngIf="!details"
+    [slug]="infos.slug"
+  ></app-details>
 </main>
